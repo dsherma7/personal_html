@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Web Dev</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+    
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+  
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"> 
+  
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  
+<!-- =======================================================
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  Author: BootstrapMade.com
+  Author URL: https://bootstrapmade.com
+======================================================= -->
+</head>
+
+<body>
+  <div id="preloader"></div>
+  
+<!--==========================
+  Header Section
+============================-->
+ <header id="header">
+    <div class="container">    
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo.png" alt="DS Logo" title=""/></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+        
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="math_classes.html">Class Files</a></li>
+          <li class="menu-has-children">
+            <a href="index.html#about">About Me</a>
+            <ul>
+              <li><a href="cv.html">CV</a>
+            </ul>
+          </li>
+          
+          <!--<li><a href="#testimonials">Cool Math Stuff</a></li>-->                    
+          <li><a href="index.html#projects" >My Projects</a>
+            <ul>
+              <li><a href="humidor.html" >Humidor</a></li>
+              <li><a href="quadrophenia.html" >Quadrophenia</a></li>
+              <li class="menu-has-children"><a href="mathnet.html" >Mathnet</a>
+                <ul>   
+                  <li><a href="https://github.com/dsherma7/mathnet"><font color="blue"><b>Github Repository</b></font> </a></li>               
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#powerpoint" >Overview PPT</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#trimmer" >Trimming Tex</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#common_words" >Common Words</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#classifier" >Classifying Fields</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#beautiful" >Most Beautiful Theorems</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#unclassified" >Unclassified Theorems</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="lims.html">Lab Management System</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Lab_API"><font color="blue"><b>Github Repository</b></font></a></li>
+                  <li><a href="lims.html#request">Request Form</a></li>
+                  <li><a href="lims.html#plate_setup">Plate Setup File</a></li>
+                  <li><a href="lims.html#main">Main Interface</a></li>
+                  <li><a href="lims.html#quality">Quality Control</a></li>
+                  <li><a href="lims.html#plate_assign">PCR Plate Assignment</a></li>
+                  <li><a href="lims.html#batch">qPCR Input Files</a></li>
+                  <li><a href="lims.html#dosage_calling">Dosage Results</a></li>
+                </ul>
+              </li>              
+              <li class="menu-has-children"><a href="computing.html" >Matlab Computing Scripts</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Computing"><b><font color="blue">Github Repository</font></b></a></li>
+                  <li><a href="computing.html#eulers">Euler's Method</a></li>
+                  <li><a href="computing.html#ivp">Other IVP</a></li>
+                  <li><a href="computing.html#finitediff">Finite Difference</a></li>
+                  <li><a href="computing.html#optim">Non-Linear Optimization</a></li>
+                  <li><a href="computing.html#md">Molecular Dynamics</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="pm.html">Portfolio Manager</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Portfolio-Manager"><b><font color="blue">Github Repository</font></b></a></li>
+                  <li><a href="pm.html#performance_summary">Performance Summary</a></li>
+                  <li><a href="pm.html#nomination_dashboard">Nomination Dashboard</a></li>
+                  <li><a href="pm.html#nomination_overview">Nomination Overview</a></li>
+                </ul>
+              </li>              
+            </ul>
+          </li>
+          <li class="menu-active"><a href="webpage_dev.html">Make Your Own Site</a></li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+    
+<!--==========================
+  About Section
+============================-->
+  <section id="about">
+    <!--<div class="container wow fadeInUp">-->
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <h3 class="section-title">How to Build a website with Bootstrap</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description"> In this page I go over some of the basics for developing a quick but effective website. We will start by downloading a readily available Bootstrap CSS template, learn what the HTML is saying, and how to copy this page to an apache server for hosting. This intro is designed for people with beginner to intermediate level programming skills.</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    <!--</div>-->
+  </section>
+    
+<!--==========================
+  Subscrbe Section
+============================-->  
+  <!--<section id="subscribe">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 class="subscribe-title">Interested in Data Science?</h3>
+          <p class="subscribe-text">Contact me </p>
+        </div>
+        <div class="col-md-4 subscribe-btn-container">
+          <a class="subscribe-btn" href="#">Subscribe Now</a>
+        </div>
+      </div>
+    </div>
+  </section>-->
+    
+<!--==========================
+  Porfolio Section
+============================-->
+ <section id="portfolio">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Bootstrap CSS Template</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">The first thing you need to do is download a Bootstrap CSS template. Here are a few examples, but you can access many more at <a href="https://startbootstrap.com/template-categories/all/">startbootstrap.com</a></p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/template1.jpg);" href="https://github.com/BlackrockDigital/startbootstrap-resume/archive/gh-pages.zip">
+            <div class="details">
+              <h4>Resume</h4>
+              <span>A simple CV/resume theme.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/template2.jpg);" href="https://github.com/BlackrockDigital/startbootstrap-new-age/archive/gh-pages.zip">
+            <div class="details">
+              <h4>New Age</h4>
+              <span>An app landing page theme.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/template3.jpg);" href="https://github.com/BlackrockDigital/startbootstrap-creative/archive/gh-pages.zip">
+            <div class="details">
+              <h4>Creative</h4>
+              <span>A one page creative theme.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/template4.jpg);" href="https://github.com/BlackrockDigital/startbootstrap-clean-blog/archive/gh-pages.zip">
+            <div class="details">
+              <h4>Clean Blog</h4>
+              <span>A clean blog theme.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/template5.jpg);" href="https://github.com/BlackrockDigital/startbootstrap-agency/archive/gh-pages.zip">
+            <div class="details">
+              <h4>Agency</h4>
+              <span>A one page agency theme.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/template6.jpg);" href="https://github.com/BlackrockDigital/startbootstrap-freelancer/archive/gh-pages.zip">
+            <div class="details">
+              <h4>Freelancer</h4>
+              <span>A one page freelancer theme.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/template7.jpg);" href="https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/archive/gh-pages.zip">
+            <div class="details">
+              <h4>SB Admin 2</h4>
+              <span>A free Bootstrap admin theme.</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/template8.jpg);" href="https://github.com/BlackrockDigital/startbootstrap-grayscale/archive/gh-pages.zip">
+            <div class="details">
+              <h4>Grayscale</h4>
+              <span>A multipurpose one page them.</span>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Step by Step
+============================--> 
+
+<!--<section id="build">
+  <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Contact Me</h3>
+          <div class="section-title-divider"></div>
+          <div class = "col-md-4"></div>
+          <div class = "col-md-4">
+            <ul id="tree3">
+                <li><a href="#">TECH</a>
+
+                    <ul>
+                        <li>Company Maintenance</li>
+                        <li>Employees
+                            <ul>
+                                <li>Reports
+                                    <ul>
+                                        <li>Report1</li>
+                                        <li>Report2</li>
+                                        <li>Report3</li>
+                                    </ul>
+                                </li>
+                                <li>Employee Maint.</li>
+                            </ul>
+                        </li>
+                        <li>Human Resources</li>
+                    </ul>
+                </li>
+                <li>XRP
+                    <ul>
+                        <li>Company Maintenance</li>
+                        <li>Employees
+                            <ul>
+                                <li>Reports
+                                    <ul>
+                                        <li>Report1</li>
+                                        <li>Report2</li>
+                                        <li>Report3</li>
+                                    </ul>
+                                </li>
+                                <li>Employee Maint.</li>
+                            </ul>
+                        </li>
+                        <li>Human Resources</li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+          <div class = "col-md-4"></div>
+        </div>
+      </div>
+    </div>
+</section>-->    
+
+<!--==========================
+  Testimonials Section
+============================--> 
+ <section id="testimonials">
+    <!--<div class="container wow fadeInUp">-->
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">What is in the HTML?</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Brief descriptions of what different parts of the Bootsrap html are doing</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4">
+          <div class="profile">
+            <div class="pic"><img src="img/code1.png" alt=""></div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> 
+            <b>&lt;head&gt;</b><br>
+              The &lt;head&gt; tag is used at the top of a page and represents any <code>meta</code> data for your web page. This includes information about the author or title, <code>.js</code> scripts, and links to your <code>.css</code> files. See more about the &lt;head&gt; tag <a href="https://www.w3schools.com/tags/tag_head.asp">here</a>.
+             <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div> <!-- Head -->
+      
+      <div class="row">
+        <div class="col-md-8">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> 
+            <b>&lt;b&gt;</b> <b>&lt;i&gt;</b> <b>&lt;em&gt;</b> <b>&lt;small&gt;</b> <b>&lt;a&gt;</b> <br>
+              These tags are for fomatting your text. The &lt;b&gt; makes it bold, &lt;i&gt; makes it italicized, &lt;em&gt; emphasizes the text (i.e bold + italics), &lt;small&gt; makes it smaller, and &lt;a&gt; creates a hyperlink. Learn more about formatting tags <a href="https://www.w3schools.com/tags/ref_byfunc.asp">here</a>.
+            <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="profile">
+            <div class="pic"><img src="img/code2.png" alt=""></div>
+          </div>
+        </div>
+      </div> <!-- Formatting -->
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="profile">
+            <div class="pic"><img src="img/code3.png" alt=""></div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> 
+            <b>&lt;div&gt;</b><br>
+              The &lt;div&gt; tag is the primary tag for formatting sections of your web page. This tag can divide up the space in your page based on the <code>class=</code> you specify. Consider the full length of the screen as 12 units, then <code>col-lg-x</code> will take <code>x</code> units of this length. See more about &lt;div&gt; tag <a href="https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp">here</a>.
+             <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div> <!-- Div -->      
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> 
+            <b>&lt;ul&gt;</b><br>
+            The &lt;ul&gt; tag creates an <code>unordered list</code>. Once this tag is opened, you can then use &lt;li&gt; to list consecutive list items. Moreover, you can use &lt;ol&gt; to create an <code>ordered list</code>. Learn more about lists <a href="https://www.w3schools.com/tags/tag_ul.asp">here</a>.
+            <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="profile">
+            <div class="pic"><img src="img/code4.png" alt=""></div>
+          </div>
+        </div>
+      </div> <!-- Lists -->
+          
+      <div class="row">
+        <div class="col-md-4">
+          <div class="profile">
+            <div class="pic"><img src="img/css1.png" alt=""></div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> 
+            <b>CSS</b><br>
+              The <code>style.css</code> document is how to format most of the page. These options can be applied on a &lt;div&gt; tag as <code>&lt;div class="nav-menu"&gt;</code>. Check <a href="https://www.webdesignerdepot.com/2016/10/20-essential-css-tricks-every-designer-should-know/">here</a> for more.<small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div> <!-- css -->  
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> 
+            <b>Extend CSS</b><br>
+            The CSS classes you create can adjust any tag inside of their scope. Here we see that the &lt;ul&gt; tag is adjusted by the <scope>nav-menu</scope>. With these extensions, you can build sections in your html code and format each tag differently. With these, you can even control special effects like hovering. See more advanced CSS tricks <a href="https://1stwebdesigner.com/css-effects/">here</a>.
+            <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="profile">
+            <div class="pic"><img src="img/css2.png" alt=""></div>
+          </div>
+        </div>
+      </div> <!-- CSS Styles -->
+
+    <!--</div>-->
+  </section>
+
+<!--==========================
+  How to look at other pages
+============================-->
+<section id="other-pages">
+  <div class='row'>
+    <h3 class="section-title">Take other's ideas</h3>
+    <div class="section-title-divider"></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      The best way to improve your website is to take notes from other people. As you use other web site take a minute to look at the source of their page. At first this can be pretty complex, but as you learn to use Javascript and CSS, it will be pretty easy to paraphrase someone else's code for yourself. To view the source code, depending on the browser, you can right click and select <code>View Page Source</code>. Some browsers also let you use something called <code>Inspect</code> which allows you to view different components by highlighting them. Below is an example of a page and its source.
+    </div>
+    <div class="col-md-1"></div>
+    <br><br>
+    <div class="col-md-6" align="center">
+      <iframe src="https://www.math.ucdavis.edu/~dsherman/" height="300" width="500" align="center" style="border:2px solid grey;" ></iframe>
+    </div>
+    <div class="col-md-6" align="center">
+      <img src="img/source.png" alt="Source code for https://dsherma7.github.io" height="300" width="500" align="center" style="border:2px solid grey;">
+    </div>    
+  </div>
+</section>
+
+<!--==========================
+  Loading into Math Server
+============================-->
+<section id="other-pages">
+  <div class='row'>
+    <h3 class="section-title">Host on a Server</h3>
+          <div class="section-title-divider"></div>
+    <div class="col-md-1"></div>      
+    <div class="col-md-5">
+      Finally, we need to load this onto the UC Davis Math server. Since the Math department has set up an apache server, we can do this by simply moving all our files to our math home directory. This can be done with a flash drive, or by using <code>scp</code>. For grad students, the server to use is either <b>Fuzzy</b> or <b>Logic</b>, and the host name is <b>math.ucdavis.edu</b>. Thus the scp command to use is 
+      <pre><code>scp website.zip [username]@fuzzy.math.ucdavis.edu:</code></pre> where <code>website.zip</code> is the name of a compressed version of your website's directory and <code>[username]</code> is your username for the Math department (not UC Davis Kerboros). Once you've done this you can log into the math server with 
+      <pre><code>ssh [username]@fuzzy.math.ucdavis.edu</code></pre>
+      This takes you to your home directory on the <code>fuzzy</code> math server. To host your website, you need to a directory called <code>public_html</code>. The best way to do this is to unzip your directory and rename it to <code>public_html</code> with
+      <pre><code>unzip website.zip<br>mv website/ public_html/</code></pre>
+      It may take a few minutes to register, but now you're done! You can access your website by going to <code>www.math.ucdavis.edu/~[username]</code>. Have fun building your page and contact me with any questions at <a href="mailto:desherman@ucdavis.edu">desherman@ucdavis.edu</a>!
+
+    </div>
+    <div class='col-md-4'>
+      <img src="img/scp.png" alt="Source code for https://dsherma7.github.io" height="375" width="500" align="center" style="border:2px solid grey;">
+    </div>
+    
+  </div>
+</section>
+
+
+
+<!--==========================
+  Services Section
+============================-->
+<section id="services">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Extra Help</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Useful websites for building a website and launching it on a server</p>
+        </div>
+      </div>
+        
+      <div class="row">
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-road"></i></div>
+          <h4 class="service-title"><a href="https://javascript.info/">Javascript Tutorial</a></h4>
+          <p class="service-description">
+            A modern approach to learning Javascript for enhancing the functionality of your website. 
+          </p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><a href="http://csiflabs.cs.ucdavis.edu/~ssdavis/60/UnixWorkshop.pdf"><i class="fa fa-bar-chart"></i></a></div>
+          <h4 class="service-title"><a href="http://csiflabs.cs.ucdavis.edu/~ssdavis/60/UnixWorkshop.pdf">Unix Workshop</a></h4>
+          <p class="service-description">Detailed Unix cheatsheat for using the command line. This will help substantially with loading your website on an apache server.</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
+          <h4 class="service-title"><a href="http://www.makeuseof.com/tag/7-cool-html-effects-that-anyone-can-add-to-their-website-nb/">7 Cool HTML Tricks</a></h4>
+          <p class="service-description">Interesting HTML based effects you can add to your website. This will be very different than using CSS.</p>
+        </div>
+      </div>
+    </div>  
+  </section>
+  
+<!--==========================
+  Team Section
+============================-->    
+ <!-- <section id="team">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Our Team</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-1.jpg" alt=""></div>
+            <h4>Walter White</h4>
+            <span>Chief Executive Officer</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-2.jpg" alt=""></div>
+            <h4>Sarah Jhinson</h4>
+            <span>Product Manager</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-3.jpg" alt=""></div>
+            <h4>William Anderson</h4>
+            <span>CTO</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>  
+    </div>
+  </section>-->
+    
+<!--==========================
+  Contact Section
+============================--> 
+  <!--<section id="contact">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Contact Me</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Contact me with any questions by visiting my office hours or sending me an email</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-3 col-md-push-2">
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><b>Office Hours:</b><br>Wednesday 4PM - 5PM, Calc Room <br>
+              Thursday 4PM - 6PM, MSB 3240</p>
+            </div>
+            
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:desherman@ucdavis.edu">desherman@ucdavis.edu</a></p>
+            </div>
+            
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+1 5589 55488 55s</p>
+            </div>
+            
+          </div>
+        </div>-->
+
+
+
+          <!--<div class="col-md-5 col-md-push-2">          
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>-->
+  
+<!--==========================
+  Footer
+============================--> 
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- 
+                All the links in the footer should remain intact. 
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+              -->
+              Bootstrap Themes by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  <script src="js/tree.js"></script>
+  
+  <script src="contactform/contactform.js"></script>
+  
+    
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mathnet</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+      
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"> 
+  
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+<div id="preloader"></div>
+  
+<!--==========================
+  Header Section
+============================-->
+  <header id="header">
+    <div class="container">    
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo.png" alt="DS Logo" title=""/></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+        
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="math_classes.html">Class Files</a></li>
+          <li class="menu-has-children">
+            <a href="index.html#about">About Me</a>
+            <ul>
+              <li><a href="cv.html">CV</a>
+            </ul>
+          </li>
+          
+          <!--<li><a href="#testimonials">Cool Math Stuff</a></li>-->                    
+          <li class="menu-active"><a href="index.html#projects" >My Projects</a>
+            <ul>
+              <li><a href="humidor.html" >Humidor</a></li>
+              <li><a href="quadrophenia.html" >Quadrophenia</a></li>
+              <li class="menu-has-children menu-active"><a href="mathnet.html" >Mathnet</a>
+                <ul>   
+                  <li><a href="https://github.com/dsherma7/mathnet"><font color="blue"><b>Github Repository</b></font> </a></li>               
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#powerpoint" >Overview PPT</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#trimmer" >Trimming Tex</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#common_words" >Common Words</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#classifier" >Classifying Fields</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#beautiful" >Most Beautiful Theorems</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#unclassified" >Unclassified Theorems</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="lims.html">Lab Management System</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Lab_API"><font color="blue"><b>Github Repository</b></font></a></li>
+                  <li><a href="lims.html#request">Request Form</a></li>
+                  <li><a href="lims.html#plate_setup">Plate Setup File</a></li>
+                  <li><a href="lims.html#main">Main Interface</a></li>
+                  <li><a href="lims.html#quality">Quality Control</a></li>
+                  <li><a href="lims.html#plate_assign">PCR Plate Assignment</a></li>
+                  <li><a href="lims.html#batch">qPCR Input Files</a></li>
+                  <li><a href="lims.html#dosage_calling">Dosage Results</a></li>
+                </ul>
+              </li>              
+              <li class="menu-has-children"><a href="computing.html" >Matlab Computing Scripts</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Computing"><b><font color="blue">Github Repository</font></b></a></li>
+                  <li><a href="computing.html#eulers">Euler's Method</a></li>
+                  <li><a href="computing.html#ivp">Other IVP</a></li>
+                  <li><a href="computing.html#finitediff">Finite Difference</a></li>
+                  <li><a href="computing.html#optim">Non-Linear Optimization</a></li>
+                  <li><a href="computing.html#md">Molecular Dynamics</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="pm.html">Portfolio Manager</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Portfolio-Manager"><b><font color="blue">Github Repository</font></b></a></li>
+                  <li><a href="pm.html#performance_summary">Performance Summary</a></li>
+                  <li><a href="pm.html#nomination_dashboard">Nomination Dashboard</a></li>
+                  <li><a href="pm.html#nomination_overview">Nomination Overview</a></li>
+                </ul>
+              </li>              
+            </ul>
+          </li>
+          <li><a href="webpage_dev.html">Make Your Own Site</a></li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<!--==========================
+  Intro
+============================-->
+  <section id="Mathnet">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Mathnet Theorem Classifier</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">
+            The tools below are used to classify Mathematical Theorems from the Wikipedia Page <a href='https://en.wikipedia.org/wiki/List_of_theorems'> List of Theorems </a>
+            </p>            
+          <div class="col-md-5"></div>
+          <div class="col-md-4">
+            <h4>Table of Contents</h4>         
+            <ul>
+              <li><a href="#powerpoint">        PowerPoint Presentation          </a></li>
+              <li><a href="#trimmer">           Trimming Tex Pages               </a></li>
+              <li><a href="#common_words">      Common Words of each Field       </a></li>        
+              <li><a href="#classifier">        Classifying Field of Mathematics </a></li>
+              <li><a href="#beautiful">         Most Beautiful Theorems          </a></li>
+              <li><a href="#unclassified">      Unclassified Theorems            </a></li>
+            </ul>
+            <p> <small>
+            Access the full Python Notebook <a href='https://github.com/dsherma7/MathNet/blob/master/Theorems.ipynb'> here </a>.
+          </small></p>            
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+  </section>
+<!--==========================
+  Powerpoint
+============================--> 
+  <section id="powerpoint">
+      <div class="row">
+          <h3 class="section-title">PowerPoint Slides</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">
+            Below are the PowerPoint slides that describe the MathNet classifier, and they can be downloaded <a href = "https://dsherma7.github.io/projects/mathnet/Slides.pptx">here</a>.
+          </p>
+        <div class="col-md-12">           
+            <center>
+            <form action="javascript:void(0);" style="position:relative; top:-20px;">
+              <img src="mathnet/Slides/Slide1.png" id="mainImage" name="mainImage" width="75%" height="75%" alt="Slides for the Mathnet Classifier that can be found at https://dsherma7.github.io/projects/mathnet/Slides.pptx" onclick="swapImage(currentIndex+1);">
+              <p>
+              <button id="btn_first" onclick="swapImage(0)"> First </button>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp               
+              <button id="btn_prev" onclick="swapImage(currentIndex-1)"> Prev </button>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <button id="btn_nxt" onclick="swapImage(currentIndex+1)"> Next </button>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <button id="btn_last" onclick="swapImage(maxIndex)"> Last </button>
+            </p>
+            </form>
+          </center>
+        </div>
+      </div>
+  </section><p></p><p></p>
+<!--==========================
+  Trimming Tex Pages
+============================--> 
+  <section id="trimmer">
+      <div class="row">
+          <h3 class="section-title">Trimming Tex Pages</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">
+            A tool for pre-processing the TeX documents
+          </p>
+
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-3">
+            <p>
+             A LaTeX trimmer needed to be created in order to convert the Math theorems into simple text for training models and analysis. The following is a wikipedia page of Wold's Theorem for Statistics. The trimmer works by removing any Tex formatting commands as well as brackets used in the formatting of a tex document. By clicking submit, this page changes into the trimmed version of the document. Reset changes it back.
+          </p>
+          <div class="col-md-6" align="center">
+            <button id="submit1" onclick="change_page()">Submit</button>
+          </div>          
+          <div class="col-md-6" align="center">
+            <button id="reset1" onclick="change_back()">Reset</button> 
+          </div>
+
+          </div>
+          <div class="col-lg-3">
+            <iframe src="https://en.wikipedia.org/wiki/Wold's_theorem" id="WoldsThm" height="300" width="620" zoom=2.0></iframe>                    
+          </div>          
+          <div class="col-lg-4">
+          </div>
+      </div>
+  </section><p></p><p></p>
+<!--==========================
+  Common Words of Each Field
+============================--> 
+  <section id="common_words">
+    <div class="row">
+        <h3 class="section-title">Common Words per Field</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">
+          Most common words in theorems of mathematics
+        </p>
+        <div class="col-lg-1"></div>
+      <div class="col-lg-10">   
+        Each of the fields of mathematics were classified by their most common words in all of the related Theorems. To see the most common words in both word cloud and bar graph form use the objects below. Select a field from the drop down box and then click submit to populate these graphs.  
+      
+      <form action="javascript:void(0);">      
+      <div class="col-md-6" align="right">        
+      <iframe src="https://dsherma7.github.io/projects/mathnet/plots/wordclouds/0.png" id="wordcloud" height="175" width="350" frameborder="0"></iframe> 
+      <p></p><p></p>
+      <div class="col-sm-5"></div>
+        <div class="col-md-3" align="right">
+          <select name="fields" size=1>
+            <option value="1">geometry</option>
+            <option value="2">statistics</option>
+            <option value="3">combinatorics</option>
+            <option value="4">differential equations</option>
+            <option value="5">physics</option>
+            <option value="6">algebraic geometry</option>
+            <option value="7">complex analysis</option>
+            <option value="8">stochastic processes</option>
+            <option value="9">dynamical systems</option>
+            <option value="10">physics</option>
+            <option value="11">mathematical logic</option>
+          </select> 
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-md-3" align="left">
+          <button id="btn_wordcloud" onclick="set_wordcloud()"> Submit </button>
+        </div>
+      </div>
+
+      <div class="col-md-6" align="left">        
+      <iframe src="https://dsherma7.github.io/projects/mathnet/plots/bargraphs/0.png" id="bargraph" height="490" width="230" frameborder="0" style="width:275px; height:275px; margin:0; padding:0;"></iframe> 
+      </div>
+            
+    </form>
+        
+        
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+  </section><p></p><p></p>
+<!--==========================
+  Classifying Fields of Mathematics
+============================--> 
+  <section id="classifier">
+    <div class="row">
+        <h3 class="section-title">Classifying Fields of Mathematics</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">
+          Using NLP to classify the theorems
+        </p>
+        <form action="javascript:void(0);">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-3">
+          <p></p><p></p>
+          <p>
+            A classifer was built in order to determine which field of Mathematics most likely represented a given Theorem. In order to determine the best Theorem, different models were tested and a <a href="https://en.wikipedia.org/wiki/Hyperparameter_optimization#Grid_search">Grid Search</a> was utilized to obtain the best Hyper-Parameters. The <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">ROC</a> curves, accuracy, plots, and grid search visualization are shown below. 
+          <p>
+            <div class="col-md-6">
+              <select name="plotType" size=1>
+                <option value="GridSearch">GridSearch</option> 
+                <option value="MNB">Naive Bayes</option> 
+                <option value="SVM">SVM</option>          
+              </select>
+            </div>
+            <div class="col-md-6">
+              <button id="btn_class" onclick="get_plots()"> Submit </button> 
+            </div>
+        </div>
+        <div class="col-lg-7">
+          <p><img id="plot" src="" alt="Select a Plot" style="width:650px;height:300px;"></p>
+        </div>
+        
+    </div>
+  </section><p></p><p></p>
+<!--==========================
+  Most Beautiful Theorems
+============================--> 
+  <section id="beautiful">
+    <div class="row">
+        <h3 class="section-title">Most Beautiful Theorems</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">
+          The result of analyzing a list of the "most beautiful" theorems
+        </p>
+        <div class="col-lg-1"></div>
+      <div class="col-lg-10">
+        <div class="col-md-1"></div>
+          <div class="col-md-10"> 
+          <p>
+            Following an article on the most <i>Beautiful</i> theorems of Mathematics from <a href=https://www.quora.com/Which-are-the-most-beautiful-mathematical-theorems-and-why target='_blank'>www.quora.com</a>, the following illustrates some traits of all these theorems as a collection. Quora asked people to consider the following when selecting theorems for the list.
+          </p>
+          <table class="table table-hover table-responsive" style="width: 100%;">
+            <tr>
+              <th><b>Category</b></th>
+              <th><b>Description</b></th>
+            </tr>
+            <tr>
+              <td>Generality</td>
+              <td>It is applicable to a wide variety of problems.</td>
+            </tr>
+            <tr> 
+              <td>Succinctness</td>
+              <td>It is expressible simply, in only a few words or equations.</td>
+            </tr>
+            <tr>
+              <td>Originality</td>
+              <td>It expresses a surprising mathematical insight, or a connection between different areas of mathematics, that had not previously been widely suspected.</td>
+            </tr>
+            <tr>
+              <td>Significance</td>
+              <td>It represents an important advance in mathematical knowledge, or resolves an important mathematical problem.</td>
+            </tr>
+            <tr>
+              <td>Potency</td>
+              <td>It stimulates many new areas of mathematical research.</td>
+            </tr>
+            <tr>
+              <td>Centrality</td>
+              <td>It is used in the proofs of many subsequent theorems.</td>
+            </tr>
+            <tr>
+              <td>Independence</td>
+              <td>Its proof depends on only a small number of previously established theorems, and preferably none.</td>
+            </tr>
+          </table> 
+          <p>
+            Based off of this criteria, users of Quora found the following Theorems to be the most Beautiful. The Pythagorean Theoem (Geometry, Pythagoras),
+            Euclid's Theorem of the Infinitude of Primes (Number Theory, Euclid), The Minimax Theorem (Game Theory, John von Neumann),The Brouwer Fixed Point Theorem (Topology, Luitzen Brouwer),Cauchy's Residue Theorem (Complex Analysis, Augustin-Louis Cauchy),Fourier's Theorem (Function Theory, Joseph Fourier),The Halting Theorem (Computability Theory, Alan Turing),Gödel's Incompleteness Theorems (Mathematical logic/Metamathematics, Kurt Godel),Schubert's Prime Knot Factorization Theorem (Knot Theory, Horst Schubert),Cantor's Theorem (Set Theory/Transfinite Analysis, Georg Cantor),and the Fundamental Theorem of Algebra (Algebra).
+         </p>
+         <p>
+            Considering these Theorems, the most common words of all of them were plotted in order to try and define which phrasing leads to the most beautiful theorems in Mathematics. The most common words are given below.
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+
+        <div class="col-md-6">
+          <center>
+            <h4>Beautiful Theorem Word Cloud</h4>
+            <img src="https://dsherma7.github.io/projects/mathnet/plots/AllBeautifulWordCloud.png"style="width:550px; height:200px;"></img>
+          </center>
+        </div>
+        <div class="col-md-6">
+          <center>
+            <h4>Beautiful Theorem Bar Graph</h4>
+            <img src="https://dsherma7.github.io/projects/mathnet/plots/AllBeautifulBargraph.png"style="width:550px; height:280px;"></img>
+          </center>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+        <p>
+          Then the SVM classifer was used on these most common words to determine which Field of Mathematics most encompasses the class of <i>Beautiful Theorems</i>, and the field that most represents all the Beautiful theorems as a whole is <b>Mathematical Logic</b>. A fitting classification, as all of Mathematics pulls from this field. Hence, Mathematical logic would likely be a strong contender in a more subjective classification of the most beautiful theorems. Moreover, Mathematical Logic should be one of the most Unique, Central, Original, and Independent fields as it is the base from which all Mathematics is built upon.  
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+  </section><p></p><p></p>
+<!--==========================
+  Unclassified Theorems
+============================--> 
+ <section id="unclassified">
+    <div class="row">
+        <h3 class="section-title">Unclassified Theorems</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">
+          Using our classifier to determine which field to assign to unclassified theorems
+        </p>
+        <div class="col-lg-1"></div>
+      <div class="col-lg-10"> 
+          In the pre-processing step, we removed any theorems that were a part of some obscure field of Mathematics (per Wikipedia). The following will try to re-classify those Theorems into more appropriate fields so that they can be included with their fellow theorems. For example the field Quantum Theory really should be lumped in with Physics, and 'Several Complex Variables' is just Complex Analysis. Below shows the predicted class of a Theorem or Field. Select either a field or a theorem title and this will display the page for that Theorem as well as the predicted class based on the model. 
+        <form action="javascript:void(0);">
+        <p></p><p></p>
+        <div class="col-md-8" align="right">
+        <center>
+          <iframe src="https://dsherma7.github.io/projects/mathnet/mathnet.html" id="thm_page2" height="300" width="700"></iframe> 
+        </center>
+        </div>        
+        <div class="col-md-4" align="left">
+        <p></p><p></p>        
+        <p>
+          Theorem:<br>
+          <select name="thms_b" size=1 style="width: 175px;">
+            <option id="b0" value="0" selected=0>Absolute convergence theorem</option>
+            <option id="b1" value="1" selected=0>Ado's theorem</option>
+            <option id="b2" value="2" selected=0>Arrival theorem</option>
+            <option id="b3" value="3" selected=0>Szpilrajn extension theorem</option>
+            <option id="b4" value="4" selected=0>Universal approximation theorem</option>
+            <option id="b5" value="5" selected=0>Witt's theorem</option>
+            <option id="b6" value="6" selected=0>Weierstrass preparation theorem</option>
+            <option id="b7" value="7" selected=0>Hirzebruch–Riemann–Roch theorem</option>
+            <option id="b8" value="8" selected=0>Lester's theorem</option>
+            <option id="b9" value="9" selected=0>Buckingham π theorem</option>
+            <option id="b10" value="10" selected=0>Pandya theorem</option>
+            <option id="b11" value="11" selected=0>Ado's theorem</option>
+          </select>
+        </p>
+        <p>       
+          Assigned Field:<br>
+          <select name="thms_a" size=1 style="width: 175px;">
+            <option id="a0" value="0" selected=0>mathematical series</option>
+            <option id="a1" value="1" selected=0>lie algebra</option>
+            <option id="a2" value="2" selected=0>queueing theory</option>
+            <option id="a3" value="3" selected=0>axiom of choice</option>
+            <option id="a4" value="4" selected=0>neural networks</option>
+            <option id="a5" value="5" selected=0>quadratic forms</option>
+            <option id="a6" value="6" selected=0>several complex variables</option>
+            <option id="a7" value="7" selected=0>complex manifolds</option>
+            <option id="a8" value="8" selected=0>euclidean plane geometry</option>
+            <option id="a9" value="9" selected=0>dimensional analysis</option>
+            <option id="a10" value="10" selected=0>nuclear physics</option>
+            <option id="a11" value="11" selected=0>lie algebra</option>
+          </select>
+        </p>
+        <p>
+          <button id="btn_class2" onclick="get_class2()"> Submit </button>
+        </p>
+        <p>
+          Predicted Field:<br>
+          <textarea name="class_txt2" placeholder="Select a Theorem or Field" id="class_txt2" style="width: 175px; height: 22px;"></textarea> 
+        </p>
+        </div>
+        </form>
+        <p></p><p></p>
+          <p> 
+            From the table above we see that the predicted fields sometimes do not agree with what we would guess subjectively. It is not surprising that  subjects like Lie Algebra, Queuing Theory, and Mathematical Series get predicted as Abstract Algebra, Stochastic Processes, and Analysis respectively. However, the classification of fields like Axiom of Choice, Neural Networks, and Quadratic Forms as Model Theory, Partial Differential Equations, and Number Theory, didn't agree with our first guesses of their parent fields. This is a demonstration that this isn't a classification of the field itself, but the theorem that Wikipedia classified as that original field. For example the Neural Network theorem was the "Universal approximation theorem" which describes
+          </p>
+          <blockquote cite="https://en.wikipedia.org/wiki/Universal_approximation_theorem">
+          <p>
+            In the mathematical theory of artificial neural networks, the universal approximation theorem states that a feed-forward network with a single hidden layer containing a finite number of neurons (i.e., a multilayer perceptron), can approximate continuous functions on compact subsets of <em>R</em>, under mild assumptions on the activation function. The theorem thus states that simple neural networks can represent a wide  variety of interesting functions when given appropriate parameters; however, it does not touch upon the algorithmic learnability of those parameters.
+          </p>
+
+          <p>
+            One of the first versions of the theorem was proved by George Cybenko in 1989 for sigmoid activation functions.
+          </p>
+
+          <p>
+            Kurt Hornik showed in 1991[3] that it is not the specific choice of the activation function, but rather the multilayer feedforward architecture itself which gives neural networks the potential of being universal approximators. The output units are always assumed to be linear. For notational convenience, only the single output case will be shown. The general case can easily be deduced from the single output case.
+          </p>          
+        </blockquote>
+
+          <p>
+            Now the wording of this quote starts to provide insight into why this was classifed as a PDE theorem. This provides some valuable uses for this prediction algorithm. First of all, the publisher of these Theorems only thought of the single use of the intended Theorem, and using this prediction model we can find other fields of Mathematics that these Theorems support. Moreover, if someone studies a very specific Mathematical idea, by predicting which Field this falls under, it opens up a source for other similar ideas under that field. Under the same idea, this allows publishers of Mathematics papers to consider who else might be interested. For example, the Neural Networks researcher would realize that PDE researchers might be interested and publish in an appropriate journal to reach them.
+          </p>         
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+  </section><p></p><p></p>
+<!--==========================
+  Footer
+============================--> 
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- 
+                All the links in the footer should remain intact. 
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+              -->
+              Bootstrap Themes by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  
+  <script src="js/mathnet.js"></script>  
+    
+</body>
+</html>

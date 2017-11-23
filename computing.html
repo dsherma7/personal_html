@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Algorithms</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+      
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"> 
+  
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- MathJax -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">    
+  </script>
+
+</head>
+
+<body>
+<div id="preloader"></div>
+
+<!--==========================
+  Header Section
+============================-->
+  <header id="header">
+    <div class="container">    
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo.png" alt="DS Logo" title=""/></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+        
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="math_classes.html">Class Files</a></li>
+          <li class="menu-has-children">
+            <a href="index.html#about">About Me</a>
+            <ul>
+              <li><a href="cv.html">CV</a>
+            </ul>
+          </li>
+          
+          <!--<li><a href="#testimonials">Cool Math Stuff</a></li>-->                    
+          <li class="menu-active"><a href="index.html#projects" >My Projects</a>
+            <ul>
+              <li><a href="humidor.html" >Humidor</a></li>
+              <li><a href="quadrophenia.html" >Quadrophenia</a></li>
+              <li class="menu-has-children"><a href="mathnet.html" >Mathnet</a>
+                <ul>   
+                  <li><a href="https://github.com/dsherma7/mathnet"><font color="blue"><b>Github Repository</b></font> </a></li>               
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#powerpoint" >Overview PPT</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#trimmer" >Trimming Tex</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#common_words" >Common Words</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#classifier" >Classifying Fields</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#beautiful" >Most Beautiful Theorems</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#unclassified" >Unclassified Theorems</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="lims.html">Lab Management System</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Lab_API"><font color="blue"><b>Github Repository</b></font></a></li>
+                  <li><a href="lims.html#request">Request Form</a></li>
+                  <li><a href="lims.html#plate_setup">Plate Setup File</a></li>
+                  <li><a href="lims.html#main">Main Interface</a></li>
+                  <li><a href="lims.html#quality">Quality Control</a></li>
+                  <li><a href="lims.html#plate_assign">PCR Plate Assignment</a></li>
+                  <li><a href="lims.html#batch">qPCR Input Files</a></li>
+                  <li><a href="lims.html#dosage_calling">Dosage Results</a></li>
+                </ul>
+              </li>              
+              <li class="menu-has-children menu-active"><a href="computing.html" >Matlab Computing Scripts</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Computing"><b><font color="blue">Github Repository</font></b></a></li>
+                  <li><a href="computing.html#eulers">Euler's Method</a></li>
+                  <li><a href="computing.html#ivp">Other IVP</a></li>
+                  <li><a href="computing.html#finitediff">Finite Difference</a></li>
+                  <li><a href="computing.html#optim">Non-Linear Optimization</a></li>
+                  <li><a href="computing.html#md">Molecular Dynamics</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="pm.html">Portfolio Manager</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Portfolio-Manager"><b><font color="blue">Github Repository</font></b></a></li>
+                  <li><a href="pm.html#performance_summary">Performance Summary</a></li>
+                  <li><a href="pm.html#nomination_dashboard">Nomination Dashboard</a></li>
+                  <li><a href="pm.html#nomination_overview">Nomination Overview</a></li>
+                </ul>
+              </li>              
+            </ul>
+          </li>
+          <li><a href="webpage_dev.html">Make Your Own Site</a></li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<!--==========================
+  Intro Section
+============================-->
+  <section id="lims">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Optimization Algorithms</h3>
+        <div class="section-title-divider"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+        <p class="section-description"> 
+          My education in Mathematics included courses in non-linear optimization and numerical analysis. In these classes I implimented many different ODE/PDE solvers and optimization techniques. The following illustrates some of these algorithms. Access this code <a href="https://github.com/dsherma7/Computing">here.</a>
+        </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section> 
+  <p style="padding:1cm"></p> 
+
+<!--==========================
+  Euler's Method
+============================--> 
+ <section id="computing">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Euler's Method for Solving IVPs</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">Standard 2nd and 4th order methods for solving Initial Value ODEs</p>        
+        <div class="col-md-12">
+          <div class="col-md-2"></div>
+          <div class="col-md-4"> 
+            <p style="padding:10px"></p>
+            <p>
+              The first method we developed for solving Initial Value Problems (IVPs) was Euler's method. This method is built off the assumption of local linearity; i.e Taylor Series. By expanding the Taylor Series of some function \( y(t)\) we obtain an approximation of the ODE with error \( \mathcal{O}(h^2) \). 
+            </p>            
+            <p>
+                Since \( y' = f(t,y(t)) \), let \( h = t_{k+1} - t_{k} \), then by Taylor Series we obtain
+                $$ y(t_{k+1}) = y(t_{k}) + f(t_{k},y(t_{k})) h + \mathcal{O}(h^2) $$
+                Thus, by dropping the \( \mathcal{O}(h^2)\) error term, we have an update rule for the iterations of \(y(t)\) and can ensure an error of at most the square of our partition size, \(h\).                
+            </p>
+          </div>
+          <div class="col-md-6" align="center">
+            <iframe src="computing/Eulers.html"></iframe>
+          </div>
+        </div>        
+        <div class="col-md-12">
+          <div class="col-md-6" align="center">
+            <iframe src="computing/Eulers4.html"></iframe>
+          </div>
+          <div class="col-md-4">
+            <p style="padding:10px"></p>
+            <p>
+              Since Euler's method immediately fell from the 2nd order Taylor's Series, we can simply use a higher order expansion to get lower order error. Let \( h = t_{k+1} - t_{k} \) and \(f(t,y(t)) = y'(t)\), then recall that by Taylor's Remainder theorem we obtain
+              $$ y(t_{k+1}) = y(t_k) + h f(t_k,y(t_k)) + \frac{h^2}{2!}f'(t_k,y(t_k)) + \mathcal{O}(h^3) $$
+              Here we see that the error is now 3rd order, but we must be able to compute the 2nd derivative of \(y(t)\) or the first derivative of \(f(t,y(t))\). 
+            </p>
+          </div>          
+          <div class="col-md-2"></div>
+        </div>
+        
+        <div class="col-md-12">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <p style="padding:10px"></p>
+            <p>
+              Since the higher order Euler's method has error proportional to \(\mathcal{O}(h^3)\), versus the \(\mathcal{O}(h^2)\) of the original Euler's method, we expect a much closer approximation of the solution to an IVP. Below we see a comparison of an IVP of the form
+              $$ y'(t) =f(t,y(t))= \frac{2}{t}y(t) + t^2 e^t \quad y(t$$
+              which has the exact solution
+              $$ y(t) = t^2 \left( e^t - e^1\right) $$
+              The plot below compares this exact solution to the approximations obtained from both Euler's method and the higher order Euler's method (as shown in the code to the right).
+
+            </p>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-2"></div>
+          <div class="col-md-4" align="center">
+            <img src="computing/testHighEulers_01.png" align="center">
+          </div>
+          <div class="col-md-6" align="center">
+            <p>
+            <iframe src="computing/testHighEulers.html"></iframe>
+          </p>
+          </div>
+         </div>           
+      </div>
+    </div>
+  </section>
+  <p style="padding:1cm"></p> 
+
+<!--==========================
+  More Methods for IVPs
+============================--> 
+ <section id="computing">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Higher Order Methods for Solving IVPs</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">Heun's, Midpoint, and Runge-Kutta methods for solving IVPs </p>        
+        
+        <div class="col-md-12">
+          <div class="col-md-6" align="center">
+            <iframe src="computing/Heuns.html"></iframe>
+          </div>
+          <div class="col-md-4">
+            <p >
+              When using Euler's method, we are looking at the discrete timesteps a distance \(h\) apart. Heun's method offers a solution that uses Euler's method to approximate \(y(t_k)\), but then adjusts this value with the previous timestep's approximation. Thus we obtain an update rule given by 
+              $$ \widetilde{y}(t_{k+1}) = y(t_k) + hf(t_k,y(t_k)) $$
+              $$ y(t_{k+1}) = y(t_k) + \frac{h}{2}\left[f(t_k,y(t_k))+ f(t_{k+1},\widetilde{y}(t_{k+1}) )\right] $$              
+            </p>
+            <p>
+              Intuitively, this smooths the approximation by adding a dependence to the previous timestep. The error associated with Heun's method can be found by integrating \(f(t,y(t))\). Using the Trapezoid rule we obtain
+              $$ y(t) = \int_a^t f(s,y(s)) ds = y(a) + \frac{h}{2}\left[ f(a,y(a)) + f(t,y(t)) \right] + \mathcal{O}(h^2) $$
+              Which gives us an error of \(\mathcal{O}(h^2)\)
+            </p>
+          </div>          
+          <div class="col-md-2"></div>
+        </div>
+        
+        <div class="col-md-12">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <p style="padding:10px"></p><p >
+              Like Heun's rule, the midpoint method attempts to improve upon Euler's method without the need of higher order derivatives. The midpoint method does this by trying use multiple timesteps simultaneously. The update rule is given by
+              $$ y(t_{k}) = y(t_{k-1}) + \frac{h}{2}f(t_{k-1},y(t_{k-1})) $$
+              $$ y(t_{k+1}) = y(t_k) + hf(t_k,y(t_k)) $$
+              The error can be found by Taylor expanding both \(y(t_k)\) and \(y(t_{k+1})\). Then, we plug our approximation of \(y(t_k)\) into the series for \(y(t_{k+1})\) and we obtaint
+              $$ y(t_{k+1}) = y(t_k) + h f(t_k,[y(t_{k-1})+hy'(t_{k-1})+\mathcal{O}(h^2)]) + \mathcal{O}(h^2)$$
+              Then, since we have an error term \(\mathcal{O}(h^2)\) multiplied by \(h\), we obtain an error of \(\mathcal{O}(h^3)\).
+            </p>
+          </div>
+          <div class="col-md-6" align="center">
+            <p>
+            <iframe src="computing/Midpoint.html"></iframe>
+          </p>
+          </div>
+        </div>          
+        <div class="col-md-12">          
+          <div class="col-md-6" align="center"> 
+            <iframe src="computing/RungeKutta.html"  ></iframe>
+          </div>
+          <div class="col-md-4">
+            <p style="padding:10px"></p><p >
+              The Runge-Kutta method is the result of using the general soltion of an initial value problem where we find 
+              $$ 
+                 \begin{matrix}
+                  \alpha_i & \beta_{ij}\\
+                  \alpha_1=0 & \beta_{21}=\frac{1}{2}\\
+                  \alpha_2=\frac{1}{2} & \beta_{32}=\frac{1}{2}\\
+                  \alpha_3=\frac{1}{2} & \beta_{43}=1\\
+                  \alpha_4=1 & 
+                 \end{matrix}
+              $$
+              See the full derivation <a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods#Derivation_of_the_Runge.E2.80.93Kutta_fourth-order_method">here.</a>. From this we find that the error for the 4th order Runge-Kutta method if \(\mathcal{O}(h^5)\).
+            </p>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+          
+        <div class="col-md-12">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <p style="padding:10px"></p><p >
+              Here is the Runge-Kutta method for a system of IVPs given by 
+              $$ z'(t) = f(x(t),y(t))$$
+              $$ w'(t) = g(x(t),y(t))$$
+              then we can apply Runge-Kutta to each function \(z(t)\) and \(w(t)\), incrementing \(x(t)\) and \(y(t)\) consecutively. 
+            </p>
+          </div>
+          <div class="col-md-6" align="center">
+            <p>
+            <iframe src="computing/RungeKuttaSystem.html"></iframe>
+          </p>
+          </div>
+        </div>  
+        
+        <div class="col-md-12">
+          <div class="col-md-6" align="center" > 
+            <iframe src="computing/RungeKuttaSystem2.html"  ></iframe>            
+          </div>
+          <div class="col-md-4" >
+            <p  >
+              Moreover, we can consider a system of IVPs of the form 
+              $$ Y' = F(t,Y) $$
+              where \(Y = [y_1(t), y_2(t), \cdots, y_k(t)]^T\) is a vector-valued function of multiple \(k\) variables. This works nearly the same as with the single variable version above, and each component is updated simultaneously following the traditional Runge-Kutta method. 
+            </p>
+          </div>
+          <div class="col-md-2"></div>
+        </div> 
+
+      </div>
+    </div>
+  </section>
+  <p style="padding:1cm"></p> 
+
+<!--==========================
+  Finite Difference Method
+============================--> 
+ <section id="computing">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Finite Difference Method for BVPs</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">Solving a boundary value problem using the finite difference method</p>        
+
+        <div class="col-md-12">          
+          <div class="col-md-6" align="center" > 
+            <iframe src="computing/FiniteDifference.html"  ></iframe>
+          </div>
+          <div class="col-md-4">
+            <p >
+              Consider a boundary value problem of the form 
+              $$ -y''(t) + r(x) y(t) = f(x)$$
+              $$ y(0) = a; \quad y(1) = b$$
+              notice that we can use the limit definition of the derivative to replace \( y''(t) \) with
+              $$ y''(t_k) \approx \frac{1}{h^2}[y(t_{k+1})-y(t_{k-1})] $$
+              and thus we get 
+              $$ \frac{1}{h^2}y(t_{k-1}) + r(x) y(t_k) - \frac{1}{h^2}y(t_{k+1}) = f(x(t_k)) $$
+              which can be expressed as a matrix
+              $$ Ay = F $$
+              where \(A\) is a tri-diagonal matrix since each iteration is dependent on \(t_{k-1},t_{k}\), and \(t_{k+1}\).
+            </p>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <p style="padding:1cm"></p> 
+
+<!--==========================
+  Non-Linear Optimization
+============================--> 
+ <section id="computing">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Non-Linear Optimization</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">Some Description </p>        
+        
+        <div class="col-md-12">
+          <div class="col-md-6" align="center" >
+            <iframe src="computing/Steepest.html"   ></iframe>
+          </div>
+          <div class="col-md-4">
+            <p style="padding:10px"></p><p >
+              The easiest way to find the minimum of a function is the follow the opposite direction of the gradient at any point. Since the gradient always points in the steepest direction, the negative gradient will point in the opposite direction. Thus we have an iterative method of approximating the minimum of some function \(F(x)\) as 
+              $$ x_{k+1} = x_k - \alpha \nabla F(x_k) $$
+
+            </p>
+          </div>          
+          <div class="col-md-2"></div>
+        </div>
+        
+        <div class="col-md-12">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <p style="padding:10px"></p><p >
+              We can take this one step further by considering Newton's method for approximating a minimum. Consider a function \(F(x): \mathbb{R}^n \to \mathbb{R}\), then the Taylor series approximation of \(F(x)\) centered at the point \(x^*\), where \(F(x^*)=0\), is given by
+              $$ \nabla F(x) = \nabla F(x^*) + h (x-x^*)^T H(x^*)  + \mathcal{O}(h^2) $$
+              where \(H(x)\) is the Hessian of \(F(x)\). Thus we get an update rule of 
+              $$ x_{k+1} = x_k - H(x_k)^{-1} \nabla F(x_k) $$
+
+            </p>
+          </div>
+          <div class="col-md-6" align="center">
+            <p>
+            <iframe src="computing/Newtons.html"    ></iframe>
+          </p>
+          </div>
+        </div>  
+        
+        <div class="col-md-12">          
+          <div class="col-md-6" align="center" > 
+            <iframe src="computing/GaussNewton.html"  ></iframe>
+          </div>
+          <div class="col-md-4">
+            <p style="padding:10px"></p><p >
+              Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some 
+            </p>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+        
+        <div class="col-md-12">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <p style="padding:10px"></p><p >
+              Since the Hessian is computationally expensive to compute, and the inverse of the Hessian is even more computationally intensive to compute, the Gauss-Newton method offers a solution free of Hessians. When we have a function \(F(x)\) of the form 
+              $$ F(x) = \sum f_i(x)^2 $$
+              we can approximate the Hessian as 
+              $$ H(x) \approx J(x)^T J(x) $$
+              where
+              $$ J(x) = [\nabla f_1(x),\nabla f_2(x),\cdots,\nabla f_k(x) ]^T$$
+              Thus, we obtain an update rule of the form
+              $$ x_{k+1} = x_k - (J(x)^TJ(x))^{-1}F(x)$$
+            </p>
+            <p>
+              Below shows each of these methods on the function \(F(x) = 99x^2 + y^2\) where green is Newton's method and the red and blue are steepest descent and GaussNewton's methods. 
+            </p>
+          </div>
+          <div class="col-md-6" align="center">
+            <p>
+            <img src="computing/OptimMethods.jpg"  style="width:70%;height:300px"  >
+          </p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+ <p style="padding:1cm"></p> 
+
+<!--==========================
+  Molecular Dynamics
+============================--> 
+ <section id="computing">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Molecular Dynamics Application</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description"> Using the IVP approximations to solve a Molecular Dynamics problem</p>        
+        
+        <div class="col-md-12">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <p style="padding:10px"></p><p >
+              We consider the Leonard Jones potential function between any two particles given by
+              $$ f_{ij} = 25[ \frac{2}{r_{ij}^13}-\frac{1}{r_{ij}^7}] $$
+              where \(r_{ij}\) is the distance between the particles. This potential function considers Van der Waals forces and weak forces between the particles.
+            </p>
+          </div>
+          <div class="col-md-6" align="center">
+            <p>
+            <iframe src="computing/f.html"    ></iframe>
+          </p>
+          </div>
+        </div>  
+        
+        <div class="col-md-12">          
+          <div class="col-md-6" align="center" > 
+            <iframe src="computing/a.html"  ></iframe>
+          </div>
+          <div class="col-md-4">
+            <p  ><p style="padding:10px;"></p>
+              The acceleration between the particles is computed using basic Newton's Law of 
+              $$ a = \frac{1}{m}F $$
+              Since all the particles are interacting with each other simultaneously, we have to sum over all interactions. This function shows how we computed this. 
+            </p>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+          
+        <div class="col-md-12">
+          <div class="col-md-2"></div>
+          <div class="col-md-4"  valign="middle">
+            <p  ><p style="padding:10px;"></p>
+              This .gif shows the state at each time step for the particles in this box. We are considering periodic boundary conditions on both horizontal and vertical boundaries. This plot has an initial velocity of 0.5 m/s, time steps of 0.1s, and a mass of \(10^{-5}\) kg. There are 15 particles. 
+            </p>
+          </div>
+          <div class="col-md-6" align="center"  >
+            <p>
+            <iframe src="computing/v05dt01m0001N15.gif"  style="width:80%;height:400px" align="center" ></iframe>
+          </p>
+          </div>
+        </div>  
+        
+        <div class="col-md-12">
+          <div class="col-md-6" align="center" > 
+            <iframe src="computing/v020dt01m00001N20.gif"  style="width:80%;height:400px" ></iframe>            
+          </div>
+          <div class="col-md-4" >
+            <p  >
+              Another .gif with a slightly slower initial velocity and a much smaller mass. Notice how much faster the particles move when the mass is so slow. 
+            </p>
+          </div>
+          <div class="col-md-2"></div>
+        </div> 
+
+        <div class="col-md-12">
+          <p style="padding:10px;"></p>
+          <div class="col-md-2"></div>
+          <div class="col-md-8" align="center">
+            You can see the full report on how this simulation was designed and implimented here.
+            <iframe src="computing/P2.pdf" height="500" width="100%" style="max-width: 600px"></iframe>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <p style="padding:1cm"></p> 
+
+<!--==========================
+  Footer
+============================--> 
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- 
+                All the links in the footer should remain intact. 
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+              -->
+              Bootstrap Themes by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+</html>

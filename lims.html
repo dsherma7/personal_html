@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LIMS</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+      
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"> 
+  
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="preloader"></div>
+
+ <!--==========================
+  Header Section
+============================-->
+  <header id="header">
+    <div class="container">    
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo.png" alt="DS Logo" title=""/></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+        
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="math_classes.html">Class Files</a></li>
+          <li class="menu-has-children">
+            <a href="index.html#about">About Me</a>
+            <ul>
+              <li><a href="cv.html">CV</a>
+            </ul>
+          </li>
+          
+          <!--<li><a href="#testimonials">Cool Math Stuff</a></li>-->                    
+          <li class="menu-active"><a href="index.html#projects" >My Projects</a>
+            <ul>
+              <li><a href="humidor.html" >Humidor</a></li>
+              <li><a href="quadrophenia.html" >Quadrophenia</a></li>
+              <li class="menu-has-children"><a href="mathnet.html" >Mathnet</a>
+                <ul>   
+                  <li><a href="https://github.com/dsherma7/mathnet"><font color="blue"><b>Github Repository</b></font> </a></li>               
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#powerpoint" >Overview PPT</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#trimmer" >Trimming Tex</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#common_words" >Common Words</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#classifier" >Classifying Fields</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#beautiful" >Most Beautiful Theorems</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html#unclassified" >Unclassified Theorems</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children menu-active"><a href="lims.html">Lab Management System</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Lab_API"><font color="blue"><b>Github Repository</b></font></a></li>
+                  <li><a href="lims.html#request">Request Form</a></li>
+                  <li><a href="lims.html#plate_setup">Plate Setup File</a></li>
+                  <li><a href="lims.html#main">Main Interface</a></li>
+                  <li><a href="lims.html#quality">Quality Control</a></li>
+                  <li><a href="lims.html#plate_assign">PCR Plate Assignment</a></li>
+                  <li><a href="lims.html#batch">qPCR Input Files</a></li>
+                  <li><a href="lims.html#dosage_calling">Dosage Results</a></li>
+                </ul>
+              </li>              
+              <li class="menu-has-children"><a href="computing.html" >Matlab Computing Scripts</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Computing"><b><font color="blue">Github Repository</font></b></a></li>
+                  <li><a href="computing.html#eulers">Euler's Method</a></li>
+                  <li><a href="computing.html#ivp">Other IVP</a></li>
+                  <li><a href="computing.html#finitediff">Finite Difference</a></li>
+                  <li><a href="computing.html#optim">Non-Linear Optimization</a></li>
+                  <li><a href="computing.html#md">Molecular Dynamics</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="pm.html">Portfolio Manager</a>
+                <ul>
+                  <li><a href="https://github.com/dsherma7/Portfolio-Manager"><b><font color="blue">Github Repository</font></b></a></li>
+                  <li><a href="pm.html#performance_summary">Performance Summary</a></li>
+                  <li><a href="pm.html#nomination_dashboard">Nomination Dashboard</a></li>
+                  <li><a href="pm.html#nomination_overview">Nomination Overview</a></li>
+                </ul>
+              </li>              
+            </ul>
+          </li>
+          <li><a href="webpage_dev.html">Make Your Own Site</a></li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<!--==========================
+  Intro Section
+============================-->
+  <section id="lims">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Lab Management System</h3>
+        <div class="section-title-divider"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+        <p class="section-description"> 
+          At Forage Genetics I was tasked with developing a system to increase the throughput of the lab processes. With the help of a team, we created a Java based lab information management system (LIMS) that tracks each step in the lab qPCR process by scanning the barcodes on the lab equipement. It then generates the necessary input files for a Quant Studio PCR machine. Finally the output of this machine is automatically analyzed and dosage calls are made using my <a href="quadrophenia.html">Quadrophenia</a> machine learning dosage calling algorithm. Each step is detailed in the following.
+        </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section> 
+
+<!--==========================
+  Request Form Section
+============================-->
+  <section id="request">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Request Form</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description"> 
+          A tool for requesting a new job in the lab
+        </p>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <p>
+            Our lab serviced many breeding programs throughout the country. In order to expedite this process, we created a web-based user interface. The first part of this process is called the Request Form. With this web form, users can request to be provided with DNA plates that they can place samples of tissue in. Moreover, this form tracks important information regarding the origin of this tissue so that the lab can adjust their processes and analysis. An example of this form is shown here.
+          </p>
+        </div>
+        <div class="col-md-6">
+           <img src="lims/Request.png" alt="LIMS Request Form interface" style="width:50%; height:50%"> 
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!--==========================
+  Plate Setup Section
+============================-->
+  <section id="plate_setup">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Plate Setup File</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description"> 
+          A map for adding tissue samples to the DNA plates
+        </p>
+        <div class="col-md-6" align="right">  
+          <img src="lims/PlateSetup.png" alt="LIMS Request Form interface" style="width:75%; height:75%"> 
+        </div>        
+        <div class="col-md-4">
+          <p>
+            Once a job is requested, the lab sends the DNA to the requestor for tissue sampling. This requires precisely placing the correct tissue samples into each of the 96 wells of each plate. Moreover, a given job could upwards of 40 plates. Thus, the LIMS generates a map for each plate so the tissue samplers know where to put each tissue. This plate also works as the first hard record in the information recording process. An example of this plate setup file is here. Note, proprietery information was removed for discretion.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section> 
+
+  <!--==========================
+  Main Section
+============================-->
+  <section id="main">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">API</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description"> 
+          The interface between the barcode scanner and LIMS
+        </p>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <p>
+            The primary source of the data management in this system is through barcode scanning. By scanning each piece of lab equipment during the process we can both track how complete the process is and ensure that the process is following the correct steps. Since barcodes are so prevelant in this system, we have also created special barcodes to act as the functions for each step. Thus the entire interface operates with barcode scans. 
+          </p>
+        </div>
+        <div class="col-md-6">     
+        <img src="lims/Main.png" alt="Main barcode user interface" style="width:35%; height:35%">      
+        </div>
+
+      </div>
+    </div>
+  </section> 
+
+  <!--==========================
+  Quality Section
+============================-->
+  <section id="quality">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Quality Control</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description"> 
+          One of the functions that the LIMS can handle is keeping track of quality control notes
+        </p>
+        <div class="col-md-3" align="right"></div>
+        <div class="col-md-3">
+          <p>
+            One of the main requests of the system is to properly handly quality control data tracking. Prior methods consisted of writing the quality of each DNA plate on the plate setup sheet and then filing that away never to be seen again. With the LIMS, we allow for tracking quality immediately upon scanning the DNA plate for processing. The image to here shows the screen for entering the quality data for the DNA plates. 
+          </p>
+        </div>
+        <div class="col-md-6" align="left">
+          <img src="lims/Quality.png" alt="Main barcode user interface" style="width:40%; height:40%"> 
+        </div>
+        <div class="col-md-2" align="right"></div>
+        <div class="col-md-8">
+          <p></p>
+          <p>
+            Once this screen has been activated, scanning the DNA plate will shows the quality for all associated plates of the same job. This way the user can enter data for each plate since often all plates are observed simultaneously to detect variations. Moreover, they can change the quality by selecting that plate in the list box. Once they have entered the quality for each plate and indicated that they are finished, the quality control for each plate is saved to the server as a .csv file. Thus, the quality information is available throughout the lab process pipeline.
+          </p>
+          <p></p>
+        </div>
+        <div class="col-md-2" align="right"></div>
+
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+          <img src="lims/Quality_Filled.png" alt="Main barcode user interface" style="width:80%; height:80%">
+        </div>
+        <div class="col-md-3">
+          <img src="lims/Quality_Result.png" alt="Main barcode user interface" style="width:80%; height:80%"> 
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </section> 
+
+  <!--==========================
+  Plate Assign Section
+============================-->
+  <section id="plate_assign">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Assign to a PCR Plate</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description"> 
+          Sets of 4 DNA plates are assigned to a PCR plate and interlaced in a pre-defined order
+        </p>
+
+        <div class="col-md-12">
+        <div class="col-md-6" align="right">
+          <img src="lims/PlateAssign.png" alt="Main barcode user interface" style="width:60%; height:60%"> 
+        </div>
+        <div class="col-md-3">
+          <p>
+            Our qPCR machine utilized 384 well PCR plates. This means that 4 DNA plates had to be combined to make one PCR plate. Moreover, this process needed to be done in such a way as to minimize local batch effects (i.e. not simply placing the plates in each quarter). Thus, the LIMS allows for assigning 4 DNA plates to a PCR plate, then the remaining steps can track how these 4 plates were interlaced onto the PCR plate. 
+          </p>
+        </div>
+        <div class="col-md-3"></div>
+        </div>  
+        <p class="vspace"></p>
+        <div class="col-md-12">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+          <p>
+            Once 4 DNA plates are assigned to a PCR plate, the results assignments are saved to a .csv file on the server. Moreover, we have multiple machines and the machine that was used can be assigned as well. Tracking the machine is an important step in quality control and measuring batch effects. Finally, updating this .csv file triggers an R script to generate input files for the PCR machines.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="lims/PlateAssign_Result.png" alt="Main barcode user interface" style="width:60%; height:60%"> 
+        </div> 
+        </div>           
+      </div>
+    </div>
+  </section> 
+
+  <!--==========================
+  Batch Experiment Section
+============================-->
+  <section id="batch">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Generate a Batch Experiment</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description"> 
+          Once the plates have been assigned, input files can be generated for the qPCR machine
+        </p>
+
+        <div class="col-md-3" align="right"></div>
+        <div class="col-md-3">
+          <p>
+            Once the quality has been tracked and the DNA plates assigned to a PCR plate, the PCR reaction can begin. We used an Applied Biosystems qPCR machine that runs with Quant Studio software. This software allows for large quantities of PCR reactions to occur sequentially so long as each plate has the proper input files linked to its barcode. The LIMS generates these files by scanning the Batch Experiment function as shown here.
+          </p>
+        </div>
+        <div class="col-md-6" align="left">
+          <img src="lims/BatchExperiment.png" alt="Main barcode user interface" style="width:40%; height:40%">  
+        </div>
+        <div class="col-md-2" align="right"></div>
+        <div class="col-md-8">
+          <p></p>
+          <p>
+            There are two primary files required to run the PCR reaction. The first is a plate layout that dicates which chemicals are required for the reaction, which samples are in each well fo the plate, and what are the target and reference assays for the reaction. Depending on the assays, the chemicals and process may be different, so this must be defined in the setup files. The second file produced is simply the PCR plates barcode so it can be attached to the experiment.
+          </p>
+          <p style="padding:5px"></p>
+        </div>
+
+        <div class="col-md-2" align="right"></div>
+
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+          <img src="lims/QS_Input.png" alt="Main barcode user interface" style="width:100%; height:100%">
+        </div>
+        <div class="col-md-3">
+          <img src="lims/QS_Barcode.png" alt="Main barcode user interface" style="width:80%; height:80%"> 
+        </div>
+        <div class="col-md-3"></div>        
+
+      </div>
+    </div>
+  </section> 
+
+  <!--==========================
+  Dosage Calling Section
+============================-->
+  <section id="dosage_calling">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Dosage Calling</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description"> 
+          The output of the qPCR process is a list of intensity values the the Quadrophenia dosage calling algorithm uses as input
+        </p>
+        <div class="col-md-12">
+        <div class="col-md-3" align="right"></div>
+        <div class="col-md-3">
+          <p>
+            The PCR reaction results in an output file that of the intensity measurements, or RQ values, for each of the samples. These RQ values following an exponential trend with distinct seperation based on the number of copies of the target assay. This is referred to as the samples' dosage; which is the goal of this entire process. The LIMS system automatically exports these files to the server once each plate in a job is finished.
+          </p>
+        </div>
+        <div class="col-md-6" align="left">
+         <img src="lims/QS_Export.png" alt="Main barcode user interface" style="width:60%; height:60%">   
+        </div>
+        <p style="padding:4cm"></p>
+        </div>
+
+        <div class="col-md-12">
+        <div class="col-md-2" align="right"></div>
+        <div class="col-md-8">
+          <p>
+            The dosage calls are made using the <a href="quadrophenia.html">Quadrophenia</a> machine learning algorithm I developed. This algorithm uses the RQ values from the PCR exports to determine the dosage. It's vital that the data pipeline worked as planned throughout this process because about 10% of each plate consists of controls; or labeled samples. If the data is incorrectly stored, then these controls will be off and the dosage calling will fail.
+          
+            Once the dosage calls are made plots are produced to illustrate these calls. These plots are shown below and consist of two types. The type of the left mimics the plots that were previously generated in an attempt to call dosage by hand. The right plot is a simple scatter plot of RQ vs. predicted dosage.
+          </p>          
+        </div>
+        <div class="col-md-2" align="right"></div>
+        <p style="padding:5px"></p>
+        </div>
+        <div class="col-md-12">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+         <img src="lims/Dosage.H3903COA.png" alt="Main barcode user interface" style="width:100%; height:100%"> 
+        </div>
+        <div class="col-md-3">
+          <img src="lims/Dosage.Box.H3903COA.png" alt="Main barcode user interface" style="width:100%; height:100%">
+        </div>
+        <div class="col-md-3"></div> 
+        </div>
+
+      </div>
+    </div>
+  </section> 
+
+<!--==========================
+  Footer
+============================--> 
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- 
+                All the links in the footer should remain intact. 
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+              -->
+              Bootstrap Themes by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  
+  <script src="contactform/contactform.js"></script>
+  
+    
+</body>
+</html>

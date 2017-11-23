@@ -1,0 +1,455 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="/assets/css/style.css?v=8181ab6854913edc34fc8ba98f4ea1ae211f4b1a">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/script.js"></script>
+  <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <title>dsherma7.github.io</title>
+  <meta name="description" content="My Personal Github Webpage">
+
+  <!-- Nav Bar Icons -->
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <title>Pure CSS3 Menu</title>
+  <link href="/assets/navbar/iconic.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/assets/navbar/style.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/assets/navbar/prefix-free.js"></script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script>
+    function change_page() {
+      document.getElementById("WoldsThm").src="https://dsherma7.github.io/projects/mathnet/worldsthm.html";
+    }
+  </script>
+  <script>
+    function change_back() {
+      document.getElementById("WoldsThm").src="https://en.wikipedia.org/wiki/Wold's_theorem" ;
+    }
+  </script>
+   <script>
+    //Global Variables
+    var links = ["/wiki/Baily-Borel_theorem","/wiki/Morera's_theorem","/wiki/Prokhorov's_theorem","/wiki/Erdős–Pósa_theorem","/wiki/Tarski's_plank_problem","/wiki/Barbier's_theorem","/wiki/Bapat-Beg_theorem","/wiki/Kneser's_theorem_(combinatorics)","/wiki/Kneser's_theorem_(differential_equations)","/wiki/Kochen-Specker_theorem","/wiki/Kodaira_embedding_theorem","/wiki/Koebe_1/4_theorem"];
+    var fields = ['algebraic geometry','complex analysis','measure theory','graph theory','geometry','geometry','statistics','combinatorics','differential equations','physics'];
+    var titles = ["Tarski's plank problem","Barbier's theorem","Bapat–Beg theorem","Kneser's theorem (combinatorics)","Kneser's theorem (differential equations)","Kochen–Specker theorem","Kodaira embedding theorem","Koebe 1/4 theorem","Kolmogorov extension theorem","Kolmogorov–Arnold–Moser theorem","König's theorem (kinetics)","König's theorem (set theory)"];
+   var links2 = ["/wiki/Absolute_convergence_theorem","/wiki/Ado's_theorem","/wiki/Arrival_theorem","/wiki/Szpilrajn_extension_theorem","/wiki/Universal_approximation_theorem","/wiki/Witt's_theorem","/wiki/Weierstrass_preparation_theorem","/wiki/Hirzebruch-Riemann-Roch_theorem","/wiki/Lester's_theorem","/wiki/Buckingham_%CF%80_theorem","/wiki/Pandya_theorem","/wiki/Ado's_theorem"];
+   var pred = ["mathematical analysis","abstract algebra","stochastic processes","model theory","partial differential equations","algebraic number theory","differential equations","algebraic surfaces","algebraic curves","physics","physics","abstract algebra"]
+  </script>
+    <script>
+  function set_wordcloud() {
+      var thm = document.getElementsByName('fields');      
+      for (i = 0; i < fields.length; i++){
+        if (thm[0].value == i.toString()){
+            document.getElementById("wordcloud").src= 'https://dsherma7.github.io/projects/mathnet/plots/wordclouds/'+i.toString()+'.png';
+            document.getElementById("bargraph").src= 'https://dsherma7.github.io/projects/mathnet/plots/bargraphs/'+i.toString()+'.png';          
+            break;
+          }
+        } 
+      }      
+    </script>
+  <script>
+  function get_class() {
+      var thm = document.getElementsByName('thms');      
+      for (i = -1; i < links.length; i++){
+        if (thm[0].value == i.toString()){
+            document.getElementById("thm_page").src= 'https://en.wikipedia.org'+links[i];
+            document.getElementById("class_txt").innerHTML=fields[i];
+            break;
+          }
+        } 
+      }      
+    </script>
+   <script>
+   var thm1_val = -1;
+   var thm2_val = -1;
+    function get_class2() {
+        var thm1 = document.getElementsByName('thms_a');
+        var thm2 = document.getElementsByName('thms_b');
+        if (thm1[0].value == thm1_val){
+          thm = thm2;
+        }else{
+          thm = thm1;
+        }
+
+        thm1_val = thm1[0].value;
+        thm2_val = thm2[0].value;
+        for (i = -1; i < links2.length; i++){
+          if (thm[0].value == i.toString()){
+              document.getElementById("thm_page2").src= 'https://en.wikipedia.org'+links2[i];
+              document.getElementById("class_txt2").innerHTML=pred[i];            
+              document.getElementById("a"+i.toString()).selected=1;
+              document.getElementById("b"+i.toString()).selected=1;            
+              break;
+            }
+          } 
+        }      
+    </script>
+    <script>
+      function padzeros(x,maxLen){
+        var out = x.toString();
+        for (i=x.toString().length; i <= blah.toString().length; i++){
+            out = '0'+out;
+        }
+        return(out);
+      }
+    </script>   
+    <script>
+  function get_plots() {
+
+        var plot = document.getElementsByName('plotType')[0].value;  
+        switch(plot) {
+            case "MNB":
+                document.getElementById("plot").style="width:650px;height:300px;";
+                document.getElementById("plot").src="https://dsherma7.github.io/projects/mathnet/plots/MNBBag.png";
+                break;
+                
+            case "SVM":
+                document.getElementById("plot").style="width:650px;height:300px;";
+                document.getElementById("plot").src="https://dsherma7.github.io/projects/mathnet/plots/SVMBag.png";
+                break;
+                
+            case "GridSearch":
+                document.getElementById("plot").style="width:320px;height:300px;";
+                document.getElementById("plot").src="https://dsherma7.github.io/projects/mathnet/plots/GridSearch.png";
+                break;
+            default:                
+        }               
+      }      
+    </script> 
+    <script>
+    //Initilize start value to 1 'For Slide1.GIF'
+    var currentIndex=1;
+    //NOTE: Set this value to the number of slides you have in the presentation.
+    var maxIndex=10;
+
+    function swapImage(imageIndex){        
+        if(imageIndex>maxIndex){ //Check if we are at the last image already, return if we are.
+            imageIndex=maxIndex;
+            //return;
+        }else if(imageIndex<1){  //Check if we are at the first image already, return if we are.
+            imageIndex=1;
+            //return;
+        }
+
+        currentIndex=imageIndex;
+        //Otherwise update mainImage
+        document.getElementById("mainImage").src='Slides/Slide' +  currentIndex + '.png';
+        return;
+    }
+</script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Douglas Sherman</h1>
+    </header>
+    <div id="container">
+      <div id="main" role="main">
+        <div class="download-bar">
+          <nav> <!-- Nav Bar-->
+            <center>
+            <ul class="menu">            
+              <li><a href="https://dsherma7.github.io"><span class="iconic home"></span> Home</a></li>  
+              
+              <li><a href="https://dsherma7.github.io/cv/contact.html"><span class="iconic mail"></span> Contact </a>
+                <ul>
+                  <li><a href="mailto:desherman@ucdavis.edu?subject=Your Github Page&body=Wow, your page is awesome!" target="_blank">Email</a></li>
+                </ul>
+              </li>
+
+              <li><a href="https://dsherma7.github.io/cv/aboutme.html"><span class="iconic plus-alt"></span> About </a>
+                <ul>
+                  <li><a href="https://dsherma7.github.io/cv/aboutme.html#restaurant">Restaurant</a></li>
+                </ul>
+              </li>
+
+              <li><a href="https:/cv/resume.html"><span class="iconic magnifying-glass"></span> CV</a>
+                <ul>
+                  <li><a href="https://dsherma7.github.io/cv/resume.html#Resume">Resume</a></li>
+                  <li><a href="https://dsherma7.github.io/cv/resume.html#Transcript">Transcript</a></li>
+                  <li><a href="https://dsherma7.github.io/cv/resume.html#Publications">Publications</a></li>
+                </ul>
+              </li>
+
+              <li><a href="https://dsherma7.github.io/projects/projects.html"><span class="iconic map-pin"></span> Projects</a>
+                <ul>
+                  <li><a href="https://dsherma7.github.io/projects/humidor.html">Humidor</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/quadrophenia.html">Quadrophenia</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/mathnet/mathnet.html">MathNet</a></li>
+                  <li><a href="https://dsherma7.github.io/projects/vm.html">Virtual Machine</a></li>                                    
+                </ul>
+              </li>                            
+              
+            </ul>
+            </center>
+            <div class="clearfix"></div>
+          </nav>
+        </div>
+
+  <article class="markdown-body">
+  <div>
+    <p>
+      The tools below are used to classify Mathematical Theorems from the Wikipedia Page <a href='https://en.wikipedia.org/wiki/List_of_theorems'> List of Theorems </a>. Access the full Python Notebook <a href='https://github.com/dsherma7/MathNet/blob/master/Theorems.ipynb'> here </a>, or an executive summary <a href='https://dsherma7.github.io/projects/mathnet/summary/summary.html'> here </a>
+    <div style="">
+      <b><u>Table of Contents:</u></b><br>
+      <ul>
+        <li><a href="#powerpoint">        PowerPoint Presentation          </a></li>
+        <li><a href="#trimmer">           Trimming Tex Pages               </a></li>
+        <li><a href="#common_words">      Common Words of each Field       </a></li>        
+        <li><a href="#classifier">        Classifying Field of Mathematics </a></li>
+        <li><a href="#beautiful">         Most Beautiful Theorems          </a></li>
+        <li><a href="#unclassified">      Unclassified Theorems            </a></li>
+      </ul>
+    </div>
+
+    <p id='powerpoint'>
+      Below are the PowerPoint slides that describe the MathNet classifier, and they can be downloaded <a href = "https://dsherma7.github.io/projects/mathnet/Slides.pptx">here</a>.
+      <center>
+        <form action="javascript:void(0);" style="position:relative; top:-20px;">
+          <img src="Slides/Slide1.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="" onclick="swapImage(currentIndex+1);">
+          <button id="btn_first" onclick="swapImage(0)"> First </button>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp               
+          <button id="btn_prev" onclick="swapImage(currentIndex-1)"> Prev </button>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <button id="btn_nxt" onclick="swapImage(currentIndex+1)"> Next </button>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <button id="btn_last" onclick="swapImage(maxIndex)"> Last </button>
+        </form>
+      </center>
+    </p>
+  </div>
+  
+  <div>
+    <h3 id='trimmer'> Tex Trimmer </h3>    
+    <p>
+      A LaTeX trimmer needed to be created in order to convert the Math theorems into simple text for training models and analysis. The following is a wikipedia page of Wold's Theorem for Statistics. The trimmer works by removing any Tex formatting commands as well as brackets used in the formatting of a tex document. By clicking submit, this page changes into the trimmed version of the document. Reset changes it back.
+    </p>
+    <iframe src="https://en.wikipedia.org/wiki/Wold's_theorem" id="WoldsThm" height="300" width="620" zoom=2.0></iframe>
+    <center>
+      <button id="submit1" onclick="change_page()">Submit</button> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <button id="reset1" onclick="change_back()">Reset</button> 
+    </center>
+   </div>
+   <div>
+    <h3 id='common_words'> Common Words per Field  </h3>
+    <p>
+      Each of the fields of mathematics were classified by their most common words in all of the related Theorems. To see the most common words in both word cloud and bar graph form use the objects below. Select a field from the drop down box and then click submit to populate these graphs.  
+    </p>
+    <form action="javascript:void(0);" style="position:relative; top:-50px;">
+      <iframe src="https://dsherma7.github.io/projects/mathnet/plots/wordclouds/0.png" id="wordcloud" height="200" width="350" frameborder="0" style="position:relative;top:-20px;"></iframe> 
+      <iframe src="https://dsherma7.github.io/projects/mathnet/plots/bargraphs/0.png" id="bargraph" height="490" width="230" frameborder="0" style="width:275px; height:275px; position:relative; top:40px; margin:0; padding:0;"></iframe> 
+      <select name="fields" size=1 style="position:relative; left:20px top:-20px;" >
+        <option value="1">geometry</option>
+        <option value="2">statistics</option>
+        <option value="3">combinatorics</option>
+        <option value="4">differential equations</option>
+        <option value="5">physics</option>
+        <option value="6">algebraic geometry</option>
+        <option value="7">complex analysis</option>
+        <option value="8">stochastic processes</option>
+        <option value="9">dynamical systems</option>
+        <option value="10">physics</option>
+        <option value="11">mathematical logic</option>
+      </select> 
+      <button id="btn_wordcloud" onclick="set_wordcloud()" style="position:relative; top:-20px; left:60px;"> Submit </button>
+    </form>
+    <p>
+      <a href="#">Back to Top</a>
+    </p>
+  </div>
+   <div>
+    <h3 id='classifier'> Field of Mathematics Classification </h3>
+    <p>
+      A classifer was built in order to determine which field of Mathematics most likely represented a given Theorem. In order to determine the best Theorem, different models were tested and a <a href="https://en.wikipedia.org/wiki/Hyperparameter_optimization#Grid_search">Grid Search</a> was utilized to obtain the best Hyper-Parameters. The <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">ROC</a> curves, accuracy, plots, and grid search visualization are shown below. 
+    <p>
+      <form action="javascript:void(0);">
+        <center>
+        <p><img id="plot" src="" alt="Select a Plot" style="width:650px;height:300px;"></p>
+        <select name="plotType" size=1>
+          <option value="GridSearch">GridSearch</option> 
+          <option value="MNB">Naive Bayes</option> 
+          <option value="SVM">SVM</option>          
+        </select>
+        <button id="btn_class" onclick="get_plots()"> Submit </button>        
+        </center>
+      </form>
+
+    <p>
+      Select a Mathematical Theorem from the drop down box and click to submit to see what field of Mathematics that the algorithm classifies that theorem in. 
+    </p>
+      <form action="javascript:void(0);">
+        <center>
+        <iframe src="https://dsherma7.github.io/projects/mathnet/mathnet.html" id="thm_page" height="300" width="620"></iframe> 
+        <select name="thms" size=1>
+          <option value="0">Baily-Borel Theorem</option> 
+          <option value="1">Morera's Theorem </option> 
+          <option value="2">Prokhorov's Theorem</option>
+          <option value="3">Erdős–Pósa Theorem</option>
+          <option value="4">Tarski's plank problem</option>
+          <option value="5">Barbier's theorem</option>
+          <option value="6">Bapat–Beg theorem</option>
+          <option value="7">Kneser's theorem (combinatorics)</option>
+          <option value="8">Kneser's theorem (differential equations)</option>
+          <option value="9">Kochen–Specker theorem</option>
+          <option value="10">Kodaira embedding theorem</option>
+        </select>
+        <button id="btn_class" onclick="get_class()"> Submit </button>
+        <textarea name="class_txt" placeholder="Select a Theorem" id="class_txt" style="width: 235px; height: 18px;"></textarea>  
+        </center>
+      </form>
+  </div>
+  <p>
+    <a href="#">Back to Top</a>
+  </p>
+  <div>
+  <h3 id='beautiful'>Beautiful Theorems</h3>
+  <p>
+    Following an article on the most <i>Beautiful</i> theorems of Mathematics from <a href=https://www.quora.com/Which-are-the-most-beautiful-mathematical-theorems-and-why target='_blank'>www.quora.com</a>, the following illustrates some traits of all these theorems as a collection. Quora asked people to consider the following when selecting theorems for the list
+      <center>
+      <table style="width: 100%;">
+        <tr>
+          <th><b>Category</b></th>
+          <th><b>Description</b></th>
+        </tr>
+        <tr>
+          <td>Generality</td>
+          <td>It is applicable to a wide variety of problems.</td>
+        </tr>
+        <tr> 
+          <td>Succinctness</td>
+          <td>It is expressible simply, in only a few words or equations.</td>
+        </tr>
+        <tr>
+          <td>Originality</td>
+          <td>It expresses a surprising mathematical insight, or a connection between different areas of mathematics, that had not previously been widely suspected.</td>
+        </tr>
+        <tr>
+          <td>Significance</td>
+          <td>It represents an important advance in mathematical knowledge, or resolves an important mathematical problem.</td>
+        </tr>
+        <tr>
+          <td>Potency</td>
+          <td>It stimulates many new areas of mathematical research.</td>
+        </tr>
+        <tr>
+          <td>Centrality</td>
+          <td>It is used in the proofs of many subsequent theorems.</td>
+        </tr>
+        <tr>
+          <td>Independence</td>
+          <td>Its proof depends on only a small number of previously established theorems, and preferably none.</td>
+        </tr>
+      </table>
+      </center>
+  </p>
+  <p>
+    Based off of this criteria, users of Quora found the following Theorems to be the most Beautiful. The Pythagorean Theoem (Geometry, Pythagoras),
+Euclid's Theorem of the Infinitude of Primes (Number Theory, Euclid), The Minimax Theorem (Game Theory, John von Neumann),The Brouwer Fixed Point Theorem (Topology, Luitzen Brouwer),Cauchy's Residue Theorem (Complex Analysis, Augustin-Louis Cauchy),Fourier's Theorem (Function Theory, Joseph Fourier),The Halting Theorem (Computability Theory, Alan Turing),Gödel's Incompleteness Theorems (Mathematical logic/Metamathematics, Kurt Godel),Schubert's Prime Knot Factorization Theorem (Knot Theory, Horst Schubert),Cantor's Theorem (Set Theory/Transfinite Analysis, Georg Cantor),and the Fundamental Theorem of Algebra (Algebra).
+  </p>
+  <p>
+    Considering these Theorems, the most common words of all of them were plotted in order to try and define which phrasing leads to the most beautiful theorems in Mathematics. The most common words are given below.
+  </p>
+    <form>
+    <center>
+      <h4>Beautiful Theorem Word Cloud</h4>
+      <img src="https://dsherma7.github.io/projects/mathnet/plots/AllBeautifulWordCloud.png"style="width:550px; height:200px;"></img>
+      <h4>Beautiful Theorem Bar Graph</h4>
+      <img src="https://dsherma7.github.io/projects/mathnet/plots/AllBeautifulBargraph.png"style="width:550px; height:280px;"></img>
+    </center>
+    </form>
+  <p>
+    Then the SVM classifer was used on these most common words to determine which Field of Mathematics most encompasses the class of <i>Beautiful Theorems</i>, and the field that most represents all the Beautiful theorems as a whole is <b>Mathematical Logic</b>. A fitting classification, as all of Mathematics pulls from this field. Hence, Mathematical logic would likely be a strong contender in a more subjective classification of the most beautiful theorems. Moreover, Mathematical Logic should be one of the most Unique, Central, Original, and Independent fields as it is the base from which all Mathematics is built upon.  
+  </p>
+  <p>
+    <a href="#">Back to Top</a>
+  </p>
+  </div>
+  <div>
+    <h3 id='unclassified'>Unclassified Theorems</h3>
+    <p>
+      In the pre-processing step, we removed any theorems that were a part of some obscure field of Mathematics (per Wikipedia). The following will try to re-classify those Theorems into more appropriate fields so that they can be included with their fellow theorems. For example the field Quantum Theory really should be lumped in with Physics, and 'Several Complex Variables' is just Complex Analysis. Below shows the predicted class of a Theorem or Field. Select either a field or a theorem title and this will display the page for that Theorem as well as the predicted class based on the model. 
+    </p>
+    <p>
+      <form action="javascript:void(0);">
+        <center>
+        <iframe src="https://dsherma7.github.io/projects/mathnet/mathnet.html" id="thm_page2" height="300" width="620"></iframe> 
+        
+          <select name="thms_a" size=1 style="width: 175px;">
+            <option id="a0" value="0" selected=0>mathematical series</option>
+            <option id="a1" value="1" selected=0>lie algebra</option>
+            <option id="a2" value="2" selected=0>queueing theory</option>
+            <option id="a3" value="3" selected=0>axiom of choice</option>
+            <option id="a4" value="4" selected=0>neural networks</option>
+            <option id="a5" value="5" selected=0>quadratic forms</option>
+            <option id="a6" value="6" selected=0>several complex variables</option>
+            <option id="a7" value="7" selected=0>complex manifolds</option>
+            <option id="a8" value="8" selected=0>euclidean plane geometry</option>
+            <option id="a9" value="9" selected=0>dimensional analysis</option>
+            <option id="a10" value="10" selected=0>nuclear physics</option>
+            <option id="a11" value="11" selected=0>lie algebra</option>
+          </select>
+        
+          <select name="thms_b" size=1 style="width: 175px;">
+            <option id="b0" value="0" selected=0>Absolute convergence theorem</option>
+            <option id="b1" value="1" selected=0>Ado's theorem</option>
+            <option id="b2" value="2" selected=0>Arrival theorem</option>
+            <option id="b3" value="3" selected=0>Szpilrajn extension theorem</option>
+            <option id="b4" value="4" selected=0>Universal approximation theorem</option>
+            <option id="b5" value="5" selected=0>Witt's theorem</option>
+            <option id="b6" value="6" selected=0>Weierstrass preparation theorem</option>
+            <option id="b7" value="7" selected=0>Hirzebruch–Riemann–Roch theorem</option>
+            <option id="b8" value="8" selected=0>Lester's theorem</option>
+            <option id="b9" value="9" selected=0>Buckingham π theorem</option>
+            <option id="b10" value="10" selected=0>Pandya theorem</option>
+            <option id="b11" value="11" selected=0>Ado's theorem</option>
+          </select>
+        
+        <button id="btn_class2" onclick="get_class2()"> Submit </button>
+        <textarea name="class_txt2" placeholder="Select a Theorem or Field" id="class_txt2" style="width: 175px; height: 18px;"></textarea>  
+        </center>
+      </form>
+    </p>
+    <p> 
+      From the table above we see that the predicted fields sometimes do not agree with what we would guess subjectively. It is not surprising that  subjects like Lie Algebra, Queuing Theory, and Mathematical Series get predicted as Abstract Algebra, Stochastic Processes, and Analysis respectively. However, the classification of fields like Axiom of Choice, Neural Networks, and Quadratic Forms as Model Theory, Partial Differential Equations, and Number Theory, didn't agree with our first guesses of their parent fields. This is a demonstration that this isn't a classification of the field itself, but the theorem that Wikipedia classified as that original field. For example the Neural Network theorem was the "Universal approximation theorem" which describes
+    </p>
+
+    <blockquote cite="https://en.wikipedia.org/wiki/Universal_approximation_theorem">
+      <p>
+        In the mathematical theory of artificial neural networks, the universal approximation theorem states that a feed-forward network with a single hidden layer containing a finite number of neurons (i.e., a multilayer perceptron), can approximate continuous functions on compact subsets of  \(\mathbb{R}^n\), under mild assumptions on the activation function. The theorem thus states that simple neural networks can represent a wide  variety of interesting functions when given appropriate parameters; however, it does not touch upon the algorithmic learnability of those parameters.
+      </p>
+
+      <p>
+        One of the first versions of the theorem was proved by George Cybenko in 1989 for sigmoid activation functions.
+      </p>
+
+      <p>
+        Kurt Hornik showed in 1991[3] that it is not the specific choice of the activation function, but rather the multilayer feedforward architecture itself which gives neural networks the potential of being universal approximators. The output units are always assumed to be linear. For notational convenience, only the single output case will be shown. The general case can easily be deduced from the single output case.
+      </p>          
+    </blockquote>
+
+      <p>
+        Now the wording of this quote starts to provide insight into why this was classifed as a PDE theorem. This provides some valuable uses for this prediction algorithm. First of all, the publisher of these Theorems only thought of the single use of the intended Theorem, and using this prediction model we can find other fields of Mathematics that these Theorems support. Moreover, if someone studies a very specific Mathematical idea, by predicting which Field this falls under, it opens up a source for other similar ideas under that field. Under the same idea, this allows publishers of Mathematics papers to consider who else might be interested. For example, the Neural Networks researcher would realize that PDE researchers might be interested and publish in an appropriate journal to reach them.
+      </p> 
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+  </div>
+  </article>
+</body>
+</html>
+
