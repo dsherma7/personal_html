@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <title>Doug's Page</title>
+  <title>MAT21B</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
-      
+    
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+  
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
   <link href="favicon.ico" rel="shortcut icon">
   
@@ -23,30 +36,18 @@
   
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  
+<!-- =======================================================
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  Author: BootstrapMade.com
+  Author URL: https://bootstrapmade.com
+======================================================= -->
 </head>
 
 <body>
-<div id="preloader"></div>
-<!--==========================
-  Hero Section
-============================-->
-  <section id="hero">
-    <div class="hero-container">
-      <div class="wow fadeIn">
-        <div class="hero-logo">
-          <img class="" src="img/first.png" alt="Douglas Sherman">
-        </div>        
-        <!--<h1>Douglas Sherman</h1>-->
-        <h2>Excited to be <br><span class="rotating"> building models, sciencing data, designing algorithms, working for you!</span></h2>
-        <div class="actions">
-          <a href="#about" class="btn-get-started">About Me</a>
-          <!--<a href="#projects" class="btn-projects">Projects</a>-->
-          <a href="math_classes.html" class="btn-projects">Class Files</a>        
-        </div>
-      </div>
-    </div>
-  </section>
-  
+  <div id="preloader"></div>    
+
 <!--==========================
   Header Section
 ============================-->
@@ -60,17 +61,23 @@
         
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="math_classes.html">Class Files</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="menu-active menu-has-children">
+          	<a href="math_classes.html">Class Files</a>
+          	<ul>
+          		<li class="menu-active"><a href="mat21b.html">MAT21B</a></li>
+          		<li><a href="mat21c.html">MAT21C</a></li>
+          	</ul>
+          </li>
           <li class="menu-has-children">
-            <a href="#about">About Me</a>
+            <a href="index.html#about">About Me</a>
             <ul>
-              <li><a href="cv.html">CV</a>
+              <li><a href="cv.html">CV</a></li>
             </ul>
           </li>
           
           <!--<li><a href="#testimonials">Cool Math Stuff</a></li>-->                    
-          <li class="menu-has-children"><a href="#projects" >My Projects</a>
+          <li class="menu-has-children"><a href="index.html#projects" >My Projects</a>
             <ul>
               <li><a href="humidor.html" >Humidor</a></li>
               <li><a href="quadrophenia.html" >Quadrophenia</a></li>
@@ -123,99 +130,65 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-
+   
 <!--==========================
-  About Section
+  Services Section
 ============================-->
-  <section id="about">
-    <div class="container wow fadeInUp">
+  <section id="services">
+    <div class="container wow">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">About Me</h3>
+          <h3 class="section-title">MAT21B Class Files</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description"> 
-            I graduated with highest honors from UC Davis in 2017 with two bachelor degrees - Computer Science and Computational Mathematics. Throughout my undergraduate career, I have developed a strong foundation in machine learning, optimization, numerical analysis, and algorithm development. Moreover, In 2016 I began working as the Senior Systems Tech for <a href="https://www.foragegenetics.com/">Forage Genetics Int</a>, the world leader on genetically engineered alfalfa. There I introduced systems for both streamlining their data analytics with Tableau and lab processes with a custom-made LIMS. I have also developed a predictive model for auto tetraploid dosage calling using a mixed semi/full supervised machine learning model. Over the next year my plans include executing the development of a new data science division at Forage Genetics, while continuing my education at UC Davis with a plan to get my Master's degree in May 2018. Access my full CV and transcripts <a href="cv.html">here.</a>
-          </p> 
-        </div>
-      </div>
-    </div>    
-  </section> 
-
-<!--==========================
-  Projects Section
-============================-->
-  <section id="projects">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Projects</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Software and Tools I've Developed for Work and School</p>
+          <p class="section-description">Answer keys, tutorials, and helpful tips for my MAT 21B class <small>(<i>Winter 2018</i>)</small></p>
         </div>
       </div>
         
       <div class="row">
+
         <div class="col-md-4 service-item">
-          <div class="service-icon">
-            <a href="mathnet.html">
-              <i class="fa fa-road"></i>
-            </a>
-          </div>
-          <h4 class="service-title">
-            <a href="mathnet.html">MathNet</a>
-          </h4>
-          <p class="service-description">A Math Theorem classifier using NLP to classify theorems off wikipedia according to their terminology.</p>
+          <div class="service-icon"><a href="http://othersideofscience.com/2013/04/29/why-studying-calculus-is-important-even-if-you-dont-use-it/"><i class="fa fa-book"></i></a></div>
+          <h4 class="service-title"><a href="http://othersideofscience.com/2013/04/29/why-studying-calculus-is-important-even-if-you-dont-use-it/">Why Bother?</a></h4>
+          <p class="service-description">Why bother wasting your time studying calculus even if you're not a math major? This article gives a pretty good answer to this question.</p>
         </div>
         <div class="col-md-4 service-item">
-          <div class="service-icon">
-            <a href="pm.html">
-              <i class="fa fa-bar-chart"></i>
-            </a>
-          </div>
-          <h4 class="service-title"><a href="pm.html">Portfolio Manager</a></h4>
-          <p class="service-description">A decision support tool using Tableau and R data analytics to support breeding decisions at Forage Genetics.</p>
+          <div class="service-icon"><a href="https://web.math.princeton.edu/~nelson/104/samples.html"><i class="  fa fa-clone"></i></a></div>
+          <h4 class="service-title"><a href="https://web.math.princeton.edu/~nelson/104/samples.html">Integral Calculus Practice Exams </a></h4>
+          <p class="service-description">Some practice exams, quizzes, and problems from Princeton University.</p>
         </div>
+  
         <div class="col-md-4 service-item">
-          <div class="service-icon">
-            <a href="lims.html">
-              <i class="fa fa-paper-plane"></i>
-            </a>
-          </div>
-          <h4 class="service-title"><a href="lims.html">Genotyping LIMS</a></h4>
-          <p class="service-description">A Java Based LIMS system that tracks and expedites lab processes by communicating with the lab equipment.</p>
+          <div class="service-icon"><a href="https://software.ucdavis.edu/index.cfm"><i class="fa fa-code"></i></a></div>
+          <h4 class="service-title"><a href="https://software.ucdavis.edu/index.cfm">Matlab</a></h4>
+          <p class="service-description">Students of UC Davis get Matlab for free. Download it here!</p>
         </div>
-        
+
+
+      </div>
+
+      <div class="row">     
        <div class="col-md-4 service-item">
-          <div class="service-icon">
-            <a href="quadrophenia.html">
-              <i class="fa fa-desktop"></i>
-            </a>
-          </div>
-          <h4 class="service-title"><a href="quadrophenia.html">Quadrophenia</a></h4>
-          <p class="service-description">An auto-tetraploid dosage caller. Trains on qPCR output of RQ values.</p>
+          <div class="service-icon"><a href="https://www.youtube.com/watch?v=aw_VM_ZDeIo&list=PLFE99D6AA25B9E5A2"><i class="  fa fa-film"></i></a></div>
+          <h4 class="service-title"><a href="https://www.youtube.com/watch?v=aw_VM_ZDeIo&list=PLFE99D6AA25B9E5A2">Patrick JMT</a></h4>
+          <p class="service-description">Youtube videos from Patrick JMT. I used these when I was first learning about integration, and it helped me a lot.</p>
         </div>
+
         <div class="col-md-4 service-item">
-          <div class="service-icon">
-            <a href="humidor.html">
-            <i class="fa fa-road"></i>
-            </a>
-          </div>
-          <h4 class="service-title"><a href="humidor.html">Humidor</a></h4>
-          <p class="service-description">A genetic sequence classifer using Convolutional Neural Networks to classify the 16S gene of microbiota.</p>
+          <div class="service-icon"><a href="https://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/video-lectures/"><i class="fa fa-tv"></i></a></div>
+          <h4 class="service-title"><a href="https://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/video-lectures/">MIT OCW - Single Variable Calculus</a></h4>
+          <p class="service-description">MIT offers many of its classes' lectures online for free. This link is the entire single variable calculus series. Start at around lecture 18 for material equivalent to MAT 21B.</p>
         </div>
+
         <div class="col-md-4 service-item">
-          <div class="service-icon">
-            <a href="computing.html">
-              <i class="fa fa-shopping-bag"></i>
-            </a>
-          </div>
-          <h4 class="service-title"><a href="computing.html">Optimization Algorithms</a></h4>
-          <p class="service-description">A collection of key numerical analysis and optimization algorithms implimented in Matlab.</p>
+          <div class="service-icon"><a href="https://www.khanacademy.org/math/calculus-home/integration-calc"><i class="fa fa-tv"></i></a></div>
+          <h4 class="service-title"><a href="https://www.khanacademy.org/math/calculus-home/integration-calc">Khan Academy - Integral Calculus</a></h4>
+          <p class="service-description">Khan Academy offers a pretty formulaic view of calculus by simply going through many problems. I generally don't endorse this method, but when trying to get good at integration techniques this may help. </p>
         </div>
       </div>
+
     </div>  
-  </section>    
-    
+  </section>
+      
 <!--==========================
   Contact Section
 ============================--> 
@@ -225,50 +198,60 @@
         <div class="col-md-12">
           <h3 class="section-title">Contact Me</h3>
           <div class="section-title-divider"></div>
-          <!--<p class="section-description">Contact me by emal</p>-->
+          <p class="section-description">Contact me with any questions by visiting my office hours or sending me an email</p>
         </div>
-      </div>      
+      </div>
+      
       <div class="row">
-        <div class="col-md-3 col-md-push-3">
-          <div class="info" align="center">
-
-            <div>
-              <i class="fa fa-phone"></i>
-              <p>+1 (508) 479-7975</p>
-            </div>
-
+        <div class="col-md-3 col-md-push-2">
+          <div class="info">
             <div>
               <i class="fa fa-map-marker"></i>
-              <p>237 Markham Ave. <br>
-              Vacaville, Ca. 95688</p>
+              <p><b>Office Hours:</b><br>Wednesday 4PM - 5PM, Calc Room <br>
+              Thursday 4PM - 6PM, MSB 3240</p>
             </div>
-
+            
             <div>
-              <a href="mailto:desherman@ucdavis.edu"><i class="fa fa-envelope"></i></a>
+              <i class="fa fa-envelope"></i>
               <p><a href="mailto:desherman@ucdavis.edu">desherman@ucdavis.edu</a></p>
             </div>
-
+            
+            <!--<div>
+              <i class="fa fa-phone"></i>
+              <p>+1 5589 55488 55s</p>
+            </div>-->
+            
           </div>
         </div>
-        <div class="col-md-3 col-md-push-3">
-          <div class="info" align="center">
-            
-            <div>
-              <a href="https://github.com/dsherma7"><i class="fa fa-github"></i></a>
-              <p><a href="https://github.com/dsherma7">Github/dsherma7</a></p>
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/dsherman-89"><i class="fa fa-linkedin"></i></a>
-              <p><a href="https://www.linkedin.com/in/dsherman-89">LinkedIn/dsherman-89</a></p>
-            </div>
-            
-            <div>
-              <a href="https://web.skype.com/"><i class="fa fa-skype"></i></a>
-              <p><a href="https://web.skype.com/">sherman.des</a></p>
-            </div>
 
+
+
+          <!--<div class="col-md-5 col-md-push-2">          
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
           </div>
-        </div>        
+        </div>-->
+
       </div>
     </div>
   </section>
